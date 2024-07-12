@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "天然产物"
+  navbar:
+    left:
+      - href: 薰衣草.qmd
+        text: 薰衣草
+      - href: 化合物.qmd
+        text: 化合物
+     
+      
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
