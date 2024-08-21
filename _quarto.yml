@@ -1,16 +1,17 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "天然产物"
   navbar:
+    search: true
     left:
       - href: 薰衣草.qmd
         text: 薰衣草
       - href: 化合物.qmd
         text: 化合物
-     
-      
+
 
 format:
   html:
