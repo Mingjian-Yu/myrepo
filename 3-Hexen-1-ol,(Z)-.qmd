@@ -1,12 +1,12 @@
 ---
-title: "2-Ethylfuran"
+title: "3-Hexen-1-ol,(Z)-"
 format: html
 editor: visual
 ---
 
 ## 基本信息
 
-英文名：2-Ethylfuran
+英文名：
 
 中文名：
 
@@ -69,4 +69,5 @@ RI (Searched)：
 <https://webbook.nist.gov/chemistry/name-ser/>
 
 <https://foodb.ca/compounds/FDB014416>
+
 

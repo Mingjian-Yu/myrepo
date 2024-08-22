@@ -2,9 +2,10 @@
 title: "薰衣草"
 format: html
 editor: visual
+number-sections: true
 ---
 
-## 薰衣草
+## 薰衣草 {#sec-introduction}
 
 薰衣草，学名 Lavandula，是唇形科薰衣草属的一种植物，原产于地中海地区。薰衣草因其美丽的紫色花朵和独特的香气而闻名，广泛用于园艺、香料和香水等领域。
 
@@ -12,12 +13,36 @@ editor: visual
 
 薰衣草精油是通过蒸馏薰衣草花和茎得到的浓缩植物油。薰衣草精油因其多种健康和美容功效而备受推崇。
 
-## 目的
+## 研究目的
 
 通过湿实验得到薰衣草的表征信息，收集现有的薰衣草药用价值和对疾病的影响，把薰衣草功效与人体的疾病或者改变联系起来。方便查询薰衣草的基本信息包括化学成分和药用效果。
 
-## 品牌
+## 精油种类
 
-Eden Botanical-505
+[Eden Botanical-505](505.qmd)
 
-Eden Botanical-510
+[Eden Botanical-510](510.qmd)
+
+[Eden Botanical-521](521.qmd)
+
+[Eden Botanical-523](523.qmd)
+
+[Eden Botanical-525](525.qmd)
+
+[Eden Botanical-526](526.qmd)
+
+[Eden Botanical-524](524.qmd)
+
+[Eden Botanical-500](500.qmd)
+
+[伊帕尔汗-LO20](LO20.qmd) 
+
+[伊帕尔汗-LO21](LO21.qmd) 
+
+[L'OCCITANE EN PROVENCE-LOF](LOF.qmd) 
+
+[伊帕尔汗-Y-01](Y-01.qmd) 
+
+[伊帕尔汗-Y-06](Y-06.qmd) 
+
+[伊帕尔汗-Y-S](Y-S.qmd) 

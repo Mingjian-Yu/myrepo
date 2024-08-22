@@ -2,9 +2,34 @@
 title: "化合物"
 format: html
 editor: visual
+number-sections: true
 ---
 
-## 目的
+## 研究目的
 
 通过湿实验得到化合物的表征信息，收集现有的化合物药用价值和对疾病的影响，把天然产物，化合物的功效与人体的疾病或者改变联系起来。方便查询各种天然产物的基本信息包括化学成分和药用效果。
+
+## 化合物种类
+
+[2-Ethylfuran](2-Ethylfuran.qmd)
+
+[Isoamyl alcohol](Isoamyl alcohol.qmd)
+
+[Toluene](Toluene.qmd)
+
+[Acetic acid,butyl ester](Acetic acid,butyl ester.qmd)
+
+[Hexane,1-methoxy-](Hexane,1-methoxy-.qmd)
+
+[2-Hexenal,(E)-](2-Hexenal,(E)-.qmd)
+
+[3-Hexen-1-ol,(Z)-](3-Hexen-1-ol,(Z)-.qmd)
+
+[2-Methyloctane](2-Methyloctane.qmd)
+
+[1-Hexanol](1-Hexanol.qmd)
+
+[Tricyclene](Tricyclene.qmd)
+
+
 
