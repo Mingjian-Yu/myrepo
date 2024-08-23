@@ -3,15 +3,16 @@ project:
   output-dir: docs
 
 website:
-  title: "天然产物"
+  title: "天然产物数据库介绍"
   navbar:
     search: true
     left:
       - href: 薰衣草.qmd
-        text: 薰衣草
+        text: 天然产物产品检索
       - href: 化合物.qmd
-        text: 化合物
-
+        text: 天然产物检索
+      - href: about.qmd
+        text: About
 
 format:
   html:

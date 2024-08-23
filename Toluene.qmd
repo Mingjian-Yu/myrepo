@@ -2,65 +2,118 @@
 title: "Toluene"
 format: html
 editor: visual
+execute:
+  echo: false
 ---
 
 ## 基本信息
 
-英文名：
+英文名：Toluene
 
-中文名：
+中文名：甲苯
 
-CAS#：
+CAS#：108-88-3
 
-化合物分类：
+化合物分类：芳香烃（Aromatic Hydrocarbons）
 
-环数：
+环数：1
 
-芳香环数：
+芳香环数：1
 
-氢键供体：
+氢键供体：0
 
-氢键受体：
+氢键受体：0
 
-脂水分配系数：
+脂水分配系数：2.73
 
-IUPAC name：
+IUPAC name：Methylbenzene
 
-InChl：
+InChl：1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
 
-InChlKey：
+InChlKey：YXFVVABEGXRONW-UHFFFAOYSA-N
 
-Canonical SMILES：
+Canonical SMILES：CC1=CC=CC=C1
 
-Isomeric SMILES：
+Isomeric SMILES：CC1=CC=CC=C1
 
-RT：
+RT：3.609
 
-化学式：
+化学式：C7H8
 
-分子量：
+分子量：92.14
 
-沸点：
+沸点：110
 
-Pressure：
+Pressure：760.00 mm Hg
 
-蒸汽压 (mmHg)：
+蒸汽压 (mmHg)：28.4
 
-温度 (℃)：
+温度 (℃)：25
 
-RI (Searched)：
+RI (Searched)：773
 
 结构式：
 
-是否是天然：
+![](images/image6.png)![](images/image5-01.png){width="234"}
 
-化合物类别：
+是否是天然：是
+
+化合物类别：苯
 
 质谱：
 
-工业应用：
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
 
-生物学意义：
+# 图1
+mz1 <- c(26,	27,	28,	37,	38,	39,	40,	41,	43,	44,	45,	46,	49,	50,	51,	52,	53,	55,	57,	60,	61,	62,	63,	64,	65,	66,	73,	74,	75,	76,	77,	83,	85,	86,	87,	89,	90,	91,	92,	93,	94)
+intensity1 <- c(50,	170,	20,	100,	240,	1070,	110,	110,	10,	10,	140,	90,	60,	410,	640,	150,	70,	10,	10,	10,	140,	320,	740,	150,	1210,	140,	10,	90,	60,	30,	90,	10,	40,	80,	40,	390,	210,	9999,	7760,	540,	10)
+
+data1 <- data.frame(mz1, intensity1)
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+#图2
+mz2 <- c(26,	27,	28,	29,	37,	38,	39,	40,	41,	42,	43,	44,	45,	46,	49,	50,	51,	52,	53,	61,	62,	63,	64,	65,	66,	73,	74,	75,	76,	77,	78,	85,	86,	87,	89,	90,	91,	92,	93)
+intensity2 <- c(50,	240,	20,	10,	130,	270,	1300,	140,	190,	40,	180,	50,	470,	250,	30,	410,	660,	150,	70,	150,	300,	690, 150,	1080,	130,	10,	80,	60,	80,	120,	50,	40,	60,	40,	340,	430,	9999,	7920,	510)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+#图3
+mz3 <- c(1,	2,	12,	13,	14,	15,	16,	25,	26,	27,	28,	29,	31,	36,	37,	38,	39,	40,	41,	42,	43,	44,	45,	46,	48,	49,	50,	51,	52,	53,	54,	55,	56,	57,	58,	60,	61,	62,	63,	64,	65,	66,	67,	73,	74,	75,	76,	77,	78,	79,	83,	84,	85,	86,	87,	89,	91)
+
+intensity3 <- c(120,	10,	10,	10,	20,	100, 10,	10,	150,	520,	10,	10,	10,	10,	160,	460,	1990,	230,	240,	20,	80,	100,	480,	360,	10,	60,	600,	1030,	260,	130,	10,	10,	10,	10,	10,	10,	160,	400,	950,	230,	1420,	170,	10,	20,	100,	70,	40,	120,	20,	10,	10,	10,	40,	80,	60,	560,	9999)
+
+data3 <- data.frame(mz3, intensity3)
+
+ggplot(data3, aes(x=mz3, y=intensity3)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum3",
+       x="m/z",
+       y="Relative Intensity") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+```
+
+工业应用：有机溶剂和化工原料，用于生产苯、甲醛、甲苯二异氰酸酯（TDI）、炸药（如TNT）等
+
+生物学意义：对神经系统有害
 
 参考网址：
 
@@ -69,5 +122,3 @@ RI (Searched)：
 <https://webbook.nist.gov/chemistry/name-ser/>
 
 <https://foodb.ca/compounds/FDB014416>
-
-
