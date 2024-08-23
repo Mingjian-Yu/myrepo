@@ -179,7 +179,7 @@
     "href": "化合物.html#化合物种类",
     "title": "天然产物检索",
     "section": "2 化合物种类",
-    "text": "2 化合物种类\n2-Ethylfuran\nIsoamyl alcohol\nToluene\nAcetic acid,butyl ester\nHexane,1-methoxy-\n2-Hexenal,(E)-\n3-Hexen-1-ol,(Z)-\n2-Methyloctane\n1-Hexanol\nTricyclene"
+    "text": "2 化合物种类\n2-Ethylfuran\nIsoamyl alcohol\nToluene\nAcetic acid,butyl ester\nHexane,1-methoxy-\n2-Hexenal,(E)-\n3-Hexen-1-ol,(Z)-\n2-Methyloctane\n1-Hexanol\nTricyclene\nLinalool"
   },
   {
     "objectID": "薰衣草.html#研究目的",
@@ -495,5 +495,19 @@
     "title": "Tricyclene",
     "section": "",
     "text": "英文名：\n中文名：\nCAS#：\n化合物分类：\n环数：\n芳香环数：\n氢键供体：\n氢键受体：\n脂水分配系数：\nIUPAC name：\nInChl：\nInChlKey：\nCanonical SMILES：\nIsomeric SMILES：\nRT：\n化学式：\n分子量：\n沸点：\nPressure：\n蒸汽压 (mmHg)：\n温度 (℃)：\nRI (Searched)：\n结构式：\n是否是天然：\n化合物类别：\n质谱：\n工业应用：\n生物学意义：\n参考网址：\nhttps://pubchem.ncbi.nlm.nih.gov/\nhttps://webbook.nist.gov/chemistry/name-ser/\nhttps://foodb.ca/compounds/FDB014416"
+  },
+  {
+    "objectID": "Linalool.html",
+    "href": "Linalool.html",
+    "title": "Linalool",
+    "section": "",
+    "text": "英文名：Linalool\n中文名：芳樟醇\nCAS#：78-70-6\n化合物分类：醇 (Alcohol)，单萜烯 (Monoterpene)\n环数：0\n芳香环数：0\n氢键供体：1\n氢键受体：1\n脂水分配系数：2.5-3\nIUPAC name：3,7-Dimethylocta-1,6-dien-3-ol\nInChl：1S/C10H18O/c1-8(2)6-5-7-10(3,4)9(11)7/h5,9,11H,6H2,1-4H3\nInChlKey：CDOSHBSSFJOMGT-UHFFFAOYSA-N\nCanonical SMILES：CC(C)CCC(C=CO)O\nIsomeric SMILES：CC(C)CCC(C=CO)O\nRT：17.429\n化学式：C10H18O\n分子量：154.25\n沸点：197\nPressure：760.00 mm Hg\n蒸汽压 (mmHg)：0.016\n温度 (℃)：25\nRI (Searched)：1104\n结构式：\n\n是否是天然：是\n化合物类别：萜醇\n质谱：\n\n\n\n\n\n\n\n\n\n工业应用：香料和香精，食品添加剂，杀虫剂\n生物学意义：具有镇静、抗焦虑、抗菌和抗炎特性；作为次生代谢产物，起到防御和吸引传粉者的作用\n参考网址：\nhttps://pubchem.ncbi.nlm.nih.gov/\nhttps://webbook.nist.gov/chemistry/name-ser/\nhttps://foodb.ca/compounds/FDB014416"
+  },
+  {
+    "objectID": "Linalool.html#基本信息",
+    "href": "Linalool.html#基本信息",
+    "title": "Linalool",
+    "section": "",
+    "text": "英文名：Linalool\n中文名：芳樟醇\nCAS#：78-70-6\n化合物分类：醇 (Alcohol)，单萜烯 (Monoterpene)\n环数：0\n芳香环数：0\n氢键供体：1\n氢键受体：1\n脂水分配系数：2.5-3\nIUPAC name：3,7-Dimethylocta-1,6-dien-3-ol\nInChl：1S/C10H18O/c1-8(2)6-5-7-10(3,4)9(11)7/h5,9,11H,6H2,1-4H3\nInChlKey：CDOSHBSSFJOMGT-UHFFFAOYSA-N\nCanonical SMILES：CC(C)CCC(C=CO)O\nIsomeric SMILES：CC(C)CCC(C=CO)O\nRT：17.429\n化学式：C10H18O\n分子量：154.25\n沸点：197\nPressure：760.00 mm Hg\n蒸汽压 (mmHg)：0.016\n温度 (℃)：25\nRI (Searched)：1104\n结构式：\n\n是否是天然：是\n化合物类别：萜醇\n质谱：\n\n\n\n\n\n\n\n\n\n工业应用：香料和香精，食品添加剂，杀虫剂\n生物学意义：具有镇静、抗焦虑、抗菌和抗炎特性；作为次生代谢产物，起到防御和吸引传粉者的作用\n参考网址：\nhttps://pubchem.ncbi.nlm.nih.gov/\nhttps://webbook.nist.gov/chemistry/name-ser/\nhttps://foodb.ca/compounds/FDB014416"
   }
 ]

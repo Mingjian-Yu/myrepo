@@ -31,5 +31,7 @@ number-sections: true
 
 [Tricyclene](Tricyclene.qmd)
 
+[Linalool](Linalool.qmd)
+
 
 

@@ -6,6 +6,7 @@ website:
   title: "天然产物数据库介绍"
   navbar:
     search: true
+    title: false
     left:
       - href: 薰衣草.qmd
         text: 天然产物产品检索
@@ -13,7 +14,7 @@ website:
         text: 天然产物检索
       - href: about.qmd
         text: About
-
+  
 format:
   html:
     theme: cosmo
