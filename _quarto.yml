@@ -9,7 +9,7 @@ website:
     title: false
     left:
       - href: 薰衣草.qmd
-        text: 天然产物产品检索
+        text: 首页
       - href: 化合物.qmd
         text: 天然产物检索
       - href: about.qmd
