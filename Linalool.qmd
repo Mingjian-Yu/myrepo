@@ -61,6 +61,7 @@ RI (Searched)：1104
 化合物类别：萜醇
 
 质谱：
+
 ```{r}
 # 安装并加载所需的包
 library(ggplot2)
