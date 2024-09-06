@@ -1,0 +1,108 @@
+---
+title: "alpha-trans-Bergamotene"
+format: html
+editor: visual
+execute: 
+  echo: false
+---
+
+## 基本信息
+
+英文名：alpha-trans-Bergamotene
+
+中文名：α-反式佛手柑素
+
+CAS#：17699-05-7
+
+化合物分类：桥联双环化合物(Bridged Bicyclo Compounds)
+
+环数：2
+
+芳香环数：0
+
+氢键供体：0
+
+氢键受体：0
+
+脂水分配系数：6.54/6.26
+
+IUPAC name：2,6-dimethyl-6-(4-methylpent-3-enyl)bicyclo[3.1.1]hept-2-ene
+
+InChl：1S/C15H24/c1-11(2)6-5-9-15(4)13-8-7-12(3)14(15)10-13/h6-7,13-14H,5,8-10H2,1-4H3
+
+InChlKey：YMBFCQPIMVLNIU-UHFFFAOYSA-N
+
+Canonical SMILES：CC1=CCC2CC1C2(C)CCC=C(C)C
+
+Isomeric SMILES：N/A
+
+RT：46.993
+
+化学式：C15H24
+
+分子量：204.35
+
+沸点：259.00
+
+Pressure：760.00 mm Hg
+
+蒸汽压 (mmHg)：0.021
+
+温度 (℃)：25
+
+RI (Searched)：1433
+
+结构式：
+
+是否是天然：是
+
+化合物类别：倍半萜烯
+
+质谱：
+
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
+
+# 图1
+mz1 <- c(41, 42, 43, 50, 51, 52, 53, 55, 56, 57, 63, 65, 66, 67, 69, 70, 77, 78, 79, 80, 81, 82, 83, 84, 91, 92, 93, 94, 95, 97, 103, 105, 106, 107, 108, 109, 115, 117, 119, 120, 121, 122, 123, 133, 134, 135, 136, 147, 148, 161, 162, 189, 204, 205)
+intensity1 <- c(8840, 540, 1580, 140, 630, 450, 1960, 3210, 1110, 550, 170, 1030, 310, 1310, 4030, 530, 3190, 750, 2860, 750, 970, 260, 200, 140, 4370, 1650, 9999, 1330, 580, 130, 300, 2590, 490, 3400, 460, 690, 200, 230, 8560, 1440, 1190, 290, 210, 480, 320, 380, 230, 260, 290, 730, 170, 330, 350, 60)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(26, 27, 29, 31, 39, 40, 41, 42, 43, 44, 45, 51, 52, 53, 54, 55, 56, 57, 59, 63, 65, 66, 67, 68, 69, 70, 71, 73, 74, 75, 77, 78, 79, 80, 81, 82, 83, 84, 89, 91, 92, 93, 94, 95, 96, 97, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 115, 117, 118, 119, 120, 121, 122, 123, 124, 133, 134, 135, 136, 147, 148, 149, 161, 162, 163, 189, 204, 205)
+intensity2 <- c(80, 750, 860, 110, 1060, 170, 5050, 280, 1260, 70, 170, 270, 130, 940, 110, 2860, 1150, 490, 80, 80, 480, 150, 780, 210, 4600, 590, 90, 60, 50, 70, 1830, 400, 2280, 720, 880, 370, 250, 140, 100, 2250, 1310, 9999, 1380, 590, 90, 150, 120, 70, 1680, 390, 2540, 380, 780, 110, 100, 70, 110, 170, 120, 8620, 1360, 980, 320, 280, 60, 520, 280, 720, 270, 270, 200, 130, 580, 110, 60, 250, 440, 70)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+```
+
+工业应用：昆虫诱食剂，食品保鲜，调味及香料剂
+
+生物学意义：抗氧化和抗菌特性
+
+参考网址：
+
+<https://pubchem.ncbi.nlm.nih.gov/>
+
+<https://webbook.nist.gov/chemistry/name-ser/>
+
+<https://foodb.ca/compounds/>

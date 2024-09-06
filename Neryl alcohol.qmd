@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：1232
 
-结构式：
+结构式：![](images/Neryl alcohol-1.png)![](images/Neryl alcohol-2.png)
 
 是否是天然：是
 

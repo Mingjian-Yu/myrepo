@@ -24,7 +24,7 @@ CAS#：7216-56-0
 
 氢键受体：0
 
-脂水分配系数：>4
+脂水分配系数：\>4
 
 IUPAC name：3-Methylene-6-(1-methylethyl)cyclohexene
 
@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：1131
 
-结构式：
+结构式：![](images/Neo-allo-Ocimene-1.png)![](images/Neo-allo-Ocimene-2.png)
 
 是否是天然：是
 
@@ -112,7 +112,6 @@ ggplot(data3, aes(x=mz3, y=intensity3)) +
 工业应用：香料，清洁剂
 
 生物学意义：具有抗菌特性；在植物中作为防御化合物，抵御病原体和昆虫
-
 
 参考网址：
 

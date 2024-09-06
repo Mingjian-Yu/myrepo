@@ -26,7 +26,7 @@ CAS#：507-70-0
 
 脂水分配系数：2.5-3
 
-IUPAC name：1,7,7-Trimethylbicyclo[2.2.1]heptan-2-ol
+IUPAC name：1,7,7-Trimethylbicyclo\[2.2.1\]heptan-2-ol
 
 InChl：1S/C10H18O/c1-6-4-5-7(6)10(2,3)9-8(7,9)11-9
 
@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：1165
 
-结构式：
+结构式：![](images/endo-Borneol.png)
 
 是否是天然：是
 

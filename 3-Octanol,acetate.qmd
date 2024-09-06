@@ -24,7 +24,7 @@ CAS#：4864-61-3
 
 氢键受体：2
 
-脂水分配系数：>4
+脂水分配系数：\>4
 
 IUPAC name：3-Octen-1-yl acetate
 
@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：1124
 
-结构式：
+结构式：![](images/3-Octanol,acetate-1.png)![](images/3-Octanol,acetate-2.png)
 
 是否是天然：是
 

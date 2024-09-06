@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：858
 
-结构式：
+结构式：![](images/3-hexene.png)
 
 是否是天然：是
 

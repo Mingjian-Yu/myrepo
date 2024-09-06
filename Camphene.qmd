@@ -26,7 +26,7 @@ CAS#：79-92-5
 
 脂水分配系数：4.1
 
-IUPAC name：(1R)-2,2-Dimethyl-3-methylenebicyclo[2.2.1]heptane
+IUPAC name：(1R)-2,2-Dimethyl-3-methylenebicyclo\[2.2.1\]heptane
 
 InChl：1S/C10H16/c1-9(2)10-7-8(3)5-4-6-10/h4,6,8-9H,5,7H2,1-3H3
 
@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：951
 
-结构式：
+结构式：![](images/Camphene-1.png)![](images/Camphene-2.png)
 
 是否是天然：是
 

@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：812
 
-结构式：
+结构式：![](images/acetic-1-01.png)![](images/acetic-2-01.png)
 
 是否是天然：是
 

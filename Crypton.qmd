@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：1188
 
-结构式：
+结构式：![](images/Crypton-1.png)![](images/Crypton-2.png)
 
 是否是天然：是
 

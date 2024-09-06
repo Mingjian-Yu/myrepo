@@ -18,11 +18,11 @@ image: 化合物.png
 
 [Toluene](Toluene.qmd)
 
-[Acetic acid,butyl ester](Acetic%20acid,butyl%20ester.qmd)
+[Acetic acid,butyl ester](Acetic acid,butyl ester.qmd)
 
-[Hexane,1-methoxy-](Hexane,1-methoxy-.qmd)
+[Hexane,1-methoxy-](Hexane,1-methoxy.qmd)
 
-[2-Hexenal,(E)-](2-Hexenal,(E)-.qmd)
+[未2-Hexenal,(E)-](2-Hexenal,(E)-.qmd)
 
 [3-Hexen-1-ol,(Z)-](3-Hexen-1-ol,(Z)-.qmd)
 
@@ -38,7 +38,7 @@ image: 化合物.png
 
 [Camphene](Camphene.qmd)
 
-[Dehydrosabinene](Dehydrosabinene.qmd)
+[未Dehydrosabinene](Dehydrosabinene.qmd)
 
 [Sabinene](Sabinene.qmd)
 
@@ -58,7 +58,7 @@ image: 化合物.png
 
 [1,4-Cineole](1,4-Cineole.qmd)
 
-[1p-Cymene](p-Cymene.qmd)
+[p-Cymene](p-Cymene.qmd)
 
 [o-Cymene](o-Cymene.qmd)
 
@@ -66,7 +66,7 @@ image: 化合物.png
 
 [Eucalyptol](Eucalyptol.qmd)
 
-[cis-beta-Ocimene](cis-beta-Ocimene.qmd)
+[cis-beta-Ocimene](cis-beta-Ocimeneqmd.qmd)
 
 [trans-beta-Ocimene](trans-beta-Ocimene.qmd)
 
@@ -76,13 +76,13 @@ image: 化合物.png
 
 [cis-Linalool oxide](cis-Linalool oxide.qmd)
 
-[trans-Linalool oxide (furanoid)](trans-Linalool oxide (furanoid).qmd)
+[trans-Linalool oxide (furanoid)](trans-Linalool oxide furanoid.qmd)
 
 [alpha-Terpinolene](alpha-Terpinolene.qmd)
 
 [Linalool](Linalool.qmd)
 
-[Hotrienol](Hotrienol.qmd)
+[未Hotrienol](Hotrienol.qmd)
 
 [1-Octen-3-yl-acetate](1-Octen-3-yl-acetate.qmd)
 
@@ -98,7 +98,7 @@ image: 化合物.png
 
 [Lavandulol](Lavandulol.qmd)
 
-[********(-)-Terpinen-4-ol](ol.qmd)
+[(-)-Terpinen-4-ol](ol.qmd)
 
 [p-Cymen-8-ol](p-Cymen-8-ol.qmd)
 
@@ -134,7 +134,7 @@ image: 化合物.png
 
 [Hexyl tiglate](Hexyl tiglate.qmd)
 
-[2,7-Octadiene-1,6-diol,2,6-dimethyl-](2,7-Octadiene-1,6-diol,2,6-dimethyl-.qmd)
+[未2,7-Octadiene-1,6-diol,2,6-dimethyl-](2,7-Octadiene-1,6-diol,2,6-dimethyl-.qmd)
 
 [Butanoic acid,phenylmethyl ester](Butanoic acid,phenylmethyl ester.qmd)
 

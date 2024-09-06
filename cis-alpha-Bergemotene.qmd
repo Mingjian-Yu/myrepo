@@ -1,0 +1,94 @@
+---
+title: "cis-alpha-Bergamotene"
+format: html
+editor: visual
+execute: 
+  echo: false
+---
+
+## 基本信息
+
+英文名：cis-alpha-Bergamotene
+
+中文名：Α-香柠檬烯
+
+CAS#：18252-46-5
+
+化合物分类：桥联双环化合物(Bridged Bicyclo Compounds)
+
+环数：2
+
+芳香环数：0
+
+氢键供体：0
+
+氢键受体：0
+
+脂水分配系数：5.91/4.46
+
+IUPAC name：(1S,5S,6S)-2,6-dimethyl-6-(4-methylpent-3-enyl)bicyclo[3.1.1]hept-2-ene\
+
+InChl：1S/C15H24/c1-11(2)6-5-9-15(4)13-8-7-12(3)14(15)10-13/h6-7,13-14H,5,8-10H2,1-4H3/t13-,14-,15-/m0/s1
+
+InChlKey：YMBFCQPIMVLNIU-KKUMJFAQSA-N
+
+Canonical SMILES：CC1=CCC2CC1C2(C)CCC=C(C)C
+
+Isomeric SMILES：CC1=CC[C@H]2C[C@@H]1[C@@]2(C)CCC=C(C)C
+
+RT：44.931
+
+化学式：C15H24
+
+分子量：204.35
+
+沸点：260.00
+
+Pressure：760.00 mm Hg
+
+蒸汽压 (mmHg)：N/A
+
+温度 (℃)：N/A
+
+RI (Searched)：1415
+
+结构式：
+
+是否是天然：是
+
+化合物类别：倍半萜烯
+
+质谱：
+
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
+
+# 图1
+mz1 <- c(27, 29, 39, 40, 41, 42, 43, 50, 51, 52, 53, 54, 55, 56, 57, 63, 64, 65, 66, 67, 68, 69, 70, 77, 78, 79, 80, 81, 82, 83, 84, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 103, 104, 105, 106, 107, 108, 109, 110, 111, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 126, 129, 131, 132, 133, 134, 135, 136, 145, 147, 148, 149, 150, 161, 162, 163, 175, 176, 189, 190, 191)
+intensity1 <- c(220, 280, 750, 140, 3110, 210, 500, 50, 250, 130, 830, 90, 1860, 730, 290, 110, 30, 590, 150, 950, 210, 3760, 470, 2290, 440, 2320, 810, 750, 240, 110, 100, 40, 20, 3090, 1280, 8280, 1080, 500, 60, 90, 70, 220, 90, 2370, 490, 3070, 440, 960, 80, 80, 180, 60, 250, 170, 9999, 1600, 1210, 300, 230, 30, 40, 40, 70, 40, 610, 330, 410, 250, 40, 210, 190, 230, 30, 500, 120, 70, 50, 20, 270, 50, 20)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+```
+
+工业应用：害虫防治和植物保护，香精和生化研究，在植物的间接防御机制中起作用，植物耐受性增加
+
+生物学意义：植物代谢物，挥发油成分
+
+参考网址：
+
+<https://pubchem.ncbi.nlm.nih.gov/>
+
+<https://webbook.nist.gov/chemistry/name-ser/>
+
+<https://foodb.ca/compounds/>

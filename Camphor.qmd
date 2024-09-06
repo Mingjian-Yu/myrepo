@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：1145
 
-结构式：
+结构式：![](images/Camphor.png)
 
 是否是天然：是
 

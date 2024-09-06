@@ -24,7 +24,7 @@ CAS#：16930-96-4
 
 氢键受体：2
 
-脂水分配系数：4.263 
+脂水分配系数：4.263
 
 IUPAC name：hexyl (E)-2-methylbut-2-enoate
 
@@ -52,7 +52,7 @@ Pressure：16 mm Hg
 
 RI (Searched)：1331
 
-结构式：
+结构式：![](images/Hexyl tiglate-1.png)![](images/Hexyl tiglate-2.png)![](images/Hexyl tiglate-3.png){width="72" height="70"}
 
 是否是天然：是
 

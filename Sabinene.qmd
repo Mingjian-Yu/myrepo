@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：973
 
-结构式：
+结构式：![](images/Sabinene-1.png)![](images/Sabinene-2.png)![](images/Sabinene-3.png)
 
 是否是天然：是
 

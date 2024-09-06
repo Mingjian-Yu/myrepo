@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：832
 
-结构式：
+结构式：![](images/hexane-1.png)![](images/hexane-2.png)![](images/hexane-3.png)![](images/hexane-4.png)
 
 是否是天然：否
 

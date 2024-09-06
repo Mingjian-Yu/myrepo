@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：926
 
-结构式：
+结构式：![](images/Tricyclene-1.png)![](images/Tricyclene-2.png)![](images/Tricyclene-3.png)
 
 是否是天然：是
 

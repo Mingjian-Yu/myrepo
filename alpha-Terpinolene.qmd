@@ -24,7 +24,7 @@ CAS#：586-62-9
 
 氢键受体：0
 
-脂水分配系数：>4
+脂水分配系数：\>4
 
 IUPAC name：1,3,8-p-Menthatriene
 
@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：1097
 
-结构式：
+结构式：/
 
 是否是天然：是
 

@@ -1,0 +1,149 @@
+---
+title: "Butanoic acid,2-methyl-,hexyl ester"
+format: html
+editor: visual
+execute: 
+  echo: false
+---
+
+## 基本信息
+
+英文名：Butanoic acid,2-methyl-,hexyl ester
+
+中文名：2-甲基丁酸丁酯
+
+CAS#：10032-15-2
+
+化合物分类：脂质，脂肪酸酯(fatty acid ester)
+
+环数：0
+
+芳香环数：0
+
+氢键供体：0
+
+氢键受体：2
+
+脂水分配系数：4.1/3.82
+
+IUPAC name：hexyl 2-methylbutanoate
+
+InChl：1S/C11H22O2/c1-4-6-7-8-9-13-11(12)10(3)5-2/h10H,4-9H2,1-3H3
+
+InChlKey：YUECNVSODFDKOQ-UHFFFAOYSA-N
+
+Canonical SMILES：CCCCCCOC(=O)C(C)CC
+
+Isomeric SMILES：N/A
+
+RT：31.960
+
+化学式：C11H22O2
+
+分子量：186.29
+
+沸点：203.00
+
+Pressure：760.00 mm Hg
+
+蒸汽压 (mmHg)：0.158
+
+温度 (℃)：25
+
+RI (Searched)：1227
+
+结构式：![](images/Butanoic acid,2-methyl-,hexyl ester-1.png)![](images/Butanoic acid,2-methyl-,hexyl ester-2.png)
+
+是否是天然：是
+
+化合物类别：单萜酯
+
+质谱：
+
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
+
+# 图1
+mz1 <- c(15, 26, 27, 28, 29, 30, 31, 39, 41, 42, 43, 44, 45, 47, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 65, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 81, 82, 83, 84, 85, 86, 87, 88, 99, 100, 101, 102, 103, 104, 105, 111, 115, 116, 128, 129, 130, 142, 143, 144, 156, 158, 159, 171, 186)
+intensity1 <- c(20, 50, 660, 310, 1430, 40, 50, 600, 2660, 890, 3520, 150, 90, 40, 40, 10, 150, 140, 1490, 2950, 5830, 270, 50, 10, 40, 10, 80, 40, 1390, 110, 60, 30, 170, 1540, 340, 20, 10, 10, 30, 260, 3040, 5020, 280, 710, 30, 120, 30, 100, 440, 9999, 580, 60, 10, 120, 10, 10, 400, 30, 10, 30, 10, 10, 350, 40, 10, 10)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(26, 27, 28, 29, 31, 34, 36, 38, 39, 41, 42, 43, 45, 46, 49, 50, 52, 53, 54, 55, 56, 57, 58, 59, 65, 67, 69, 70, 71, 72, 73, 74, 75, 76, 78, 84, 85, 86, 87, 88, 91, 96, 99, 101, 102, 103, 104, 105, 106, 107, 109, 115, 116, 129, 142, 143, 144, 158, 159)
+intensity2 <- c(80, 670, 1050, 1350, 20, 20, 30, 70, 710, 4810, 1390, 3100, 30, 30, 150, 50, 60, 290, 420, 2660, 2570, 9999, 520, 210, 100, 570, 1360, 190, 110, 40, 110, 1050, 250, 20, 20, 2280, 7450, 200, 550, 60, 50, 20, 120, 80, 230, 5840, 300, 70, 20, 10, 20, 120, 20, 200, 20, 30, 20, 130, 30)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图3
+mz3 <- c(25, 26, 27, 28, 29, 30, 31, 37, 38, 39, 40, 41, 42, 43, 44, 45, 47, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 63, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 81, 82, 83, 84, 85, 86, 87, 88, 89, 92, 93, 97, 99, 100, 101, 102, 103, 104, 105, 115, 116, 129, 130, 131, 158, 159, 186, 187)
+intensity3 <- c(10, 150, 2930, 1040, 5690, 190, 310, 10, 40, 1530, 240, 7010, 2040, 8650, 300, 220, 110, 40, 60, 30, 320, 250, 2550, 5330, 9999, 460, 120, 10, 130, 20, 20, 10, 170, 60, 1950, 190, 120, 40, 250, 2220, 550, 30, 30, 20, 30, 10, 50, 340, 3550, 5550, 350, 960, 30, 20, 10, 10, 10, 100, 30, 80, 320, 9080, 430, 60, 80, 10, 240, 20, 60, 130, 10, 10, 10)
+
+data3 <- data.frame(mz3, intensity3)
+
+ggplot(data3, aes(x=mz3, y=intensity3)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum3",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5)) 
+
+# 图4
+mz4 <- c(26, 27, 29, 31, 39, 41, 42, 43, 44, 45, 53, 54, 56, 57, 58, 69, 70, 73, 74, 75, 83, 84, 85, 86, 87, 99, 102, 103, 104, 115, 129, 158)
+intensity4 <- c(100, 2220, 4540, 110, 1310, 5650, 2000, 7740, 190, 140, 220, 180, 4530, 9999, 440, 1510, 110, 140, 2130, 410, 250, 3790, 5670, 330, 690, 100, 450, 9690, 580, 100, 220, 210)
+
+data4 <- data.frame(mz4, intensity4)
+
+ggplot(data4, aes(x=mz4, y=intensity4)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum4",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5)) 
+
+# 图5
+mz5 <- c(25, 26, 27, 28, 29, 30, 31, 37, 38, 39, 40, 41, 42, 43, 44, 45, 47, 53, 54, 55, 56, 57, 58, 59, 61, 67, 68, 69, 70, 71, 72, 73, 74, 75, 81, 82, 83, 84, 85, 86, 87, 88, 99, 100, 101, 102, 103, 104, 115, 129, 130, 143, 158, 159)
+intensity5 <- c(10, 140, 1340, 1190, 2980, 60, 90, 10, 30, 960, 230, 4740, 1780, 6970, 350, 130, 70, 200, 230, 2640, 4650, 9999, 440, 70, 40, 150, 50, 1790, 120, 80, 40, 200, 2150, 390, 10, 40, 320, 3580, 6830, 350, 850, 20, 130, 20, 80, 430, 9930, 490, 100, 260, 20, 20, 230, 20)
+
+data5 <- data.frame(mz5, intensity5)
+
+ggplot(data5, aes(x=mz5, y=intensity5)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum5",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5)) 
+```
+
+工业应用：表面活性剂，乳化剂，增味剂
+
+生物学意义：营养物质，膜稳定剂，能量来源，能量储存
+
+参考网址：
+
+<https://pubchem.ncbi.nlm.nih.gov/>
+
+<https://webbook.nist.gov/chemistry/name-ser/>
+
+<https://foodb.ca/compounds/>

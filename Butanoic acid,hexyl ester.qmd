@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：1184
 
-结构式：
+结构式：![](images/Butanoic acid,hexyl ester-1.png)![](images/Butanoic acid,hexyl ester-2.png)
 
 是否是天然：是
 

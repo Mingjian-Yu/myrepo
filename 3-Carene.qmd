@@ -26,7 +26,7 @@ CAS#：13466-78-9
 
 脂水分配系数：4.5
 
-IUPAC name：(1S)-3,7,7-Trimethylbicyclo[4.1.0]hept-3-ene
+IUPAC name：(1S)-3,7,7-Trimethylbicyclo\[4.1.0\]hept-3-ene
 
 InChl：1S/C10H16/c1-8-6-7-9-10(8,2)4-3-5-10/h6-7H,3-5H2,1-2H3
 
@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：1009
 
-结构式：
+结构式：/
 
 是否是天然：是
 

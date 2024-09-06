@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：1297
 
-结构式：
+结构式：![](images/Thymol-1.png)![](images/Thymol-2.png)
 
 是否是天然：是
 

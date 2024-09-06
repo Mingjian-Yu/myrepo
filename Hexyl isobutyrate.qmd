@@ -24,7 +24,7 @@ CAS#：2349-07-07
 
 氢键受体：2
 
-脂水分配系数：>4
+脂水分配系数：\>4
 
 IUPAC name：Hexyl 2-methylpropanoate
 
@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：1152
 
-结构式：
+结构式：![](images/Hexyl isobutyrate-1.png)![](images/Hexyl isobutyrate-2.png)
 
 是否是天然：是
 

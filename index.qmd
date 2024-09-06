@@ -4,8 +4,8 @@ format: html
 editor: visual
 listing:
   contents: 
-    - "posts/薰衣草/*.qmd"
-    - "posts/化合物/*.qmd"
+    - "薰衣草.qmd"
+    - "化合物.qmd"
   type: grid
   sort-ui: true
   filter-ui: true

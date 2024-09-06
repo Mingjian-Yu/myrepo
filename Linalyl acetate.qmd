@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：1253
 
-结构式：
+结构式：![](images/Linalyl acetate-1.png)![](images/Linalyl acetate-3.png)
 
 是否是天然：是
 
@@ -126,7 +126,6 @@ ggplot(data4, aes(x=mz4, y=intensity4)) +
 工业应用：表面活性剂，乳化剂，增味剂
 
 生物学意义：营养物质，膜稳定剂，能量来源，能量储存
-
 
 参考网址：
 

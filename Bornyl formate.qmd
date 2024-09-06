@@ -26,14 +26,13 @@ CAS#：7492-41-3
 
 脂水分配系数：3.34/2.38
 
-IUPAC name：(1,7,7-trimethyl-2-bicyclo[2.2.1]heptanyl) formate
+IUPAC name：(1,7,7-trimethyl-2-bicyclo\[2.2.1\]heptanyl) formate
 
 InChl：1S/C11H18O2/c1-10(2)8-4-5-11(10,3)9(6-8)13-7-12/h7-9H,4-6H2,1-3H3
 
 InChlKey：RDWUNORUTVEHJF-UHFFFAOYSA-N
 
 Canonical SMILES：CC1(C2CCC1(C(C2)OC=O)C)C
-
 
 Isomeric SMILES：N/A
 
@@ -53,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：N/A
 
-结构式：
+结构式：![](images/Bornyl formate-1.png)![](images/Bornyl formate-2.png)
 
 是否是天然：是
 

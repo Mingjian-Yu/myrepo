@@ -1,0 +1,108 @@
+---
+title: "(-)-Terpinen-4-ol"
+format: html
+editor: visual
+execute: 
+  echo: false
+---
+
+## 基本信息
+
+英文名：(-)-Terpinen-4-ol
+
+中文名：(-)-萜品-4-醇
+
+CAS#：20126-76-5
+
+化合物分类：醇 (Alcohol)，单萜烯 (Monoterpene)
+
+环数：1
+
+芳香环数：0
+
+氢键供体：1
+
+氢键受体：1
+
+脂水分配系数：2-3
+
+IUPAC name：4-(2-Hydroxypropyl)-1-methylcyclohex-2-ene
+
+InChl：1S/C10H18O/c1-8(2)6-10(7-11,3-4)9(5-8)10/h6,9,11H,1-5H3
+
+InChlKey：ZUQAVCSOMOTWMJ-UHFFFAOYSA-N
+
+Canonical SMILES：CC(C)CCC(CO)O
+
+Isomeric SMILES：CC(C)CCC(CO)O
+
+RT：25.574
+
+化学式：C10H18O
+
+分子量：154.25
+
+沸点：209.00
+
+Pressure：760.00 mm Hg
+
+蒸汽压 (mmHg)：0.048
+
+温度 (℃)：25
+
+RI (Searched)：1175
+
+结构式：![](images/(-)-Terpinen-4-ol-1.png)![](images/(-)-Terpinen-4-ol-2.png)![](images/(-)-Terpinen-4-ol-3.png)
+
+是否是天然：是
+
+化合物类别：单萜醇
+
+质谱：
+
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
+
+# 图1
+mz1 <- c(36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 75, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 115, 117, 119, 120, 121, 122, 123, 124, 125, 126, 134, 135, 136, 137, 138, 139, 140, 152, 153, 154, 155, 156)
+intensity1 <- c(30, 5, 30, 690, 190, 1850, 220, 4500, 160, 130, 10, 5, 5, 40, 190, 80, 710, 90, 2130, 100, 210, 290, 120, 5, 5, 10, 50, 20, 250, 80, 1320, 1260, 2150, 440, 9999, 470, 30, 5, 750, 110, 390, 70, 790, 320, 900, 200, 130, 2330, 190, 5, 10, 820, 720, 3990, 350, 510, 80, 120, 150, 30, 5, 5, 20, 5, 110, 10, 120, 20, 90, 470, 4800, 370, 20, 10, 30, 180, 10, 340, 30, 20, 5, 260, 30, 40, 10, 1320, 190, 5, 210, 10, 5, 5, 1530, 170, 10)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(29, 31, 39, 40, 41, 42, 43, 45, 51, 53, 54, 55, 56, 57, 58, 59, 65, 66, 67, 68, 69, 70, 71, 72, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 91, 92, 93, 94, 95, 97, 98, 105, 107, 109, 110, 111, 112, 119, 121, 125, 136, 137, 139, 154, 155)
+intensity2 <- c(260, 160, 830, 220, 2020, 240, 4650, 120, 200, 810, 100, 1290, 100, 190, 200, 140, 250, 120, 1220, 1510, 1930, 380, 9999, 450, 810, 140, 350, 100, 980, 310, 930, 140, 150, 2740, 190, 700, 700, 3850, 390, 510, 100, 160, 100, 110, 100, 630, 6070, 430, 120, 370, 250, 1080, 160, 260, 2080, 200)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+```
+
+工业应用：医药，香料
+
+生物学意义：具有抗菌、抗真菌和抗炎特性；在植物中作为次生代谢产物，起到防御作用
+
+参考网址：
+
+<https://pubchem.ncbi.nlm.nih.gov/>
+
+<https://webbook.nist.gov/chemistry/name-ser/>
+
+<https://foodb.ca/compounds/>

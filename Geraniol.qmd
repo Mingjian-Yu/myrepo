@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：1267
 
-结构式：
+结构式：![](images/Geraniol-1.png)![](images/Geraniol-2.png)
 
 是否是天然：否
 

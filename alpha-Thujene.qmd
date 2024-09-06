@@ -52,7 +52,7 @@ Pressure：760.00 mm Hg
 
 RI (Searched)：929
 
-结构式：
+结构式：![](images/alpha-Thujene-1.png)![](images/alpha-Thujene-2.png)
 
 是否是天然：是
 
