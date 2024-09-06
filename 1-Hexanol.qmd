@@ -2,65 +2,142 @@
 title: "1-Hexanol"
 format: html
 editor: visual
+execute: 
+  echo: false
 ---
 
 ## 基本信息
 
-英文名：
+英文名：1-Hexanol
 
-中文名：
+中文名：1己醇
 
-CAS#：
+CAS#：111-27-3
 
-化合物分类：
+化合物分类：醇类（Alcohols）
 
-环数：
+环数：0
 
-芳香环数：
+芳香环数：0
 
-氢键供体：
+氢键供体：1
 
-氢键受体：
+氢键受体：1
 
-脂水分配系数：
+脂水分配系数：2.03
 
-IUPAC name：
+IUPAC name：Hexan-1-ol
 
-InChl：
+InChl：1S/C6H14O/c1-2-3-4-5-6-7/h7H,2-6H2,1H3
 
-InChlKey：
+InChlKey：ZSIAUFGUXNUGDI-UHFFFAOYSA-N
 
-Canonical SMILES：
+Canonical SMILES：CCCCCCO
 
-Isomeric SMILES：
+Isomeric SMILES：CCCCCCO
 
-RT：
+RT：5.301
 
-化学式：
+化学式：C6H14O
 
-分子量：
+分子量：102.17
 
-沸点：
+沸点：156
 
-Pressure：
+Pressure：760.00 mm Hg
 
-蒸汽压 (mmHg)：
+蒸汽压 (mmHg)：0.928
 
-温度 (℃)：
+温度 (℃)：25
 
-RI (Searched)：
+RI (Searched)：867
 
 结构式：
 
-是否是天然：
+是否是天然：是
 
-化合物类别：
+化合物类别：醇
 
 质谱：
 
-工业应用：
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
 
-生物学意义：
+# 图1
+mz1 <- c(14, 15, 16, 17, 18, 19, 25, 26, 27, 28, 29, 30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 77, 79, 81, 82, 83, 84, 85, 86, 87, 88, 102)
+intensity1 <- c(260, 1160, 80, 240, 780, 190, 40, 610, 4980, 1290, 4640, 200, 5170, 130, 40, 10, 110, 240, 2530, 480, 5900, 5340, 8310, 580, 580, 30, 10, 20, 90, 140, 50, 310, 350, 5690, 9999, 950, 50, 60, 10, 20, 20, 20, 30, 10, 120, 90, 2390, 380, 290, 40, 300, 20, 10, 10, 10, 20, 20, 140, 960, 90, 30, 10, 20, 10)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(25, 26, 27, 28, 29, 30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 77, 79, 81, 82, 83, 84, 85, 86, 101, 102)
+intensity2 <- c(10, 700, 5230, 1250, 4300, 190, 5710, 90, 50, 10, 100, 270, 2570, 500, 5700, 5390, 7620, 560, 450, 30, 5, 10, 110, 150, 50, 310, 340, 5710, 9999, 990, 50, 60, 5, 10, 10, 30, 30, 10, 110, 80, 2240, 290, 200, 30, 150, 10, 10, 5, 10, 10, 150, 880, 100, 5, 10, 5)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图3
+mz3 <- c(14, 15, 16, 17, 18, 19, 26, 27, 28, 29, 30, 31, 32, 33, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79, 81, 82, 83, 84, 85, 86, 87)
+intensity3 <- c(10, 100, 10, 50, 240, 70, 90, 1390, 370, 1840, 70, 2280, 40, 30, 20, 60, 950, 200, 3670, 3890, 5650, 340, 500, 30, 10, 10, 40, 70, 20, 190, 270, 4880, 9999, 840, 40, 60, 10, 10, 10, 20, 10, 30, 10, 110, 90, 3040, 310, 180, 30, 160, 10, 10, 20, 10, 10, 30, 30, 190, 1300, 190, 10, 30)
+
+data3 <- data.frame(mz3, intensity3)
+
+ggplot(data3, aes(x=mz3, y=intensity3)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum3",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+# 图4
+mz4 <- c(14, 15, 17, 18, 19, 26, 27, 28, 29, 30, 31, 32, 33, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 63, 65, 67, 68, 69, 70, 71, 72, 73, 81, 82, 83, 84, 85, 101)
+intensity4 <- c(10, 100, 50, 250, 70, 90, 1480, 300, 1970, 60, 2360, 20, 20, 20, 60, 840, 180, 3590, 4330, 5890, 200, 280, 10, 30, 50, 20, 140, 260, 4880, 9999, 700, 20, 50, 10, 10, 90, 70, 2500, 330, 160, 20, 120, 10, 10, 140, 850, 70, 10)
+
+data4 <- data.frame(mz4, intensity4)
+
+ggplot(data4, aes(x=mz4, y=intensity4)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum4",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图5
+mz5 <- c(15, 19, 26, 27, 28, 29, 30, 31, 32, 33, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 61, 62, 63, 65, 66, 67, 68, 69, 70, 71, 73, 74, 77, 78, 79, 81, 82, 83, 84, 85, 101)
+intensity5 <- c(30, 20, 90, 1050, 270, 1370, 50, 1610, 20, 20, 20, 90, 1210, 260, 3870, 3400, 4920, 230, 240, 20, 10, 60, 100, 30, 280, 310, 5310, 9999, 870, 30, 40, 10, 10, 20, 30, 10, 110, 80, 2550, 240, 110, 110, 10, 10, 10, 10, 10, 10, 100, 450, 30, 10)
+
+data5 <- data.frame(mz5, intensity5)
+
+ggplot(data5, aes(x=mz5, y=intensity5)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum5",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+```
+
+工业应用：生产香料、增塑剂、溶剂和润滑剂；也用作有机合成中间体
+
+生物学意义：具有抗菌和抗真菌作用
 
 参考网址：
 
@@ -68,7 +145,4 @@ RI (Searched)：
 
 <https://webbook.nist.gov/chemistry/name-ser/>
 
-<https://foodb.ca/compounds/FDB014416>
-
-
-
+<https://foodb.ca/compounds/>

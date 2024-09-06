@@ -2,65 +2,115 @@
 title: "2-Ethylfuran"
 format: html
 editor: visual
+execute: 
+  echo: false
 ---
 
 ## 基本信息
 
 英文名：2-Ethylfuran
 
-中文名：
+中文名：2-乙基呋喃
 
-CAS#：
+CAS#：3208-16-0
 
-化合物分类：
+化合物分类：呋喃类（Furans），杂环化合物（Heterocyclic Compounds），芳香化合物（Aromatic Compounds），挥发性有机化合物（Volatile Organic Compounds, VOCs）
 
-环数：
+环数：1
 
-芳香环数：
+芳香环数：1
 
-氢键供体：
+氢键供体：0
 
-氢键受体：
+氢键受体：1
 
-脂水分配系数：
+脂水分配系数：2.23
 
-IUPAC name：
+IUPAC name：2-ethylfuran
 
-InChl：
+InChl：1S/C6H8O/c1-2-6-4-3-5-7-6/h3-5H,2H2,1H3
 
-InChlKey：
+InChlKey：LLCSFCKTZZWZSK-UHFFFAOYSA-N
 
-Canonical SMILES：
+Canonical SMILES：CCC1=CC=CO1
 
-Isomeric SMILES：
+Isomeric SMILES：CCC1=CC=CO1
 
-RT：
+RT：2.897
 
-化学式：
+化学式：C6H8O
 
-分子量：
+分子量：96.13
 
-沸点：
+沸点：92.00
 
-Pressure：
+Pressure：760.00 mm Hg
 
-蒸汽压 (mmHg)：
+蒸汽压 (mmHg)：50
 
-温度 (℃)：
+温度 (℃)：20
 
-RI (Searched)：
+RI (Searched)：702
 
-结构式：
+结构式：![](images/1-eth.png)
 
-是否是天然：
+是否是天然：是
 
-化合物类别：
+化合物类别：呋喃
 
 质谱：
 
-工业应用：
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
 
-生物学意义：
+# 图1
+mz1 <- c(14, 15, 25, 26, 27, 28, 29, 31, 32, 36, 37, 38, 39, 40, 41, 42, 43, 49, 50, 51, 52, 53, 54, 55, 57, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 77, 78, 79, 80, 81, 82, 83, 94, 95, 96, 97)
+intensity1 <- c(20, 100, 20, 190, 670, 130, 350, 40, 30, 30, 250, 520, 1620, 330, 850, 160, 40, 60, 470, 620, 430, 3300, 180, 120, 30, 20, 110, 190, 290, 70, 590, 260, 760, 180, 30, 70, 20, 40, 20, 9999, 560, 30, 100, 600, 3070, 180)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(27, 29, 39, 40, 41, 42, 51, 52, 53, 54, 55, 65, 66, 67, 68, 69, 80, 81, 82, 94, 95, 96, 97)
+intensity2 <- c(1400, 690, 1690, 580, 2790, 380, 260, 450, 6770, 390, 190, 680, 480, 2010, 660, 650, 100, 9999, 1060, 180, 1300, 6190, 590)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图3
+mz3 <- c(14, 15, 25, 26, 27, 28, 29, 31, 32, 33, 37, 38, 39, 40, 41, 42, 43, 44, 47, 49, 50, 51, 52, 53, 54, 55, 56, 57, 61, 62, 63, 64, 65, 66, 67, 68, 69, 77, 78, 79, 80, 81, 82, 83, 94, 95, 96, 97, 98)
+intensity3 <- c(10, 30, 10, 90, 650, 100, 210, 40, 30, 10, 100, 240, 1070, 230, 840, 110, 70, 10, 40, 20, 160, 290, 170, 2390, 140, 120, 10, 40, 40, 80, 120, 30, 370, 150, 580, 130, 30, 70, 10, 20, 20, 9999, 560, 40, 100, 760, 4700, 320, 20)
+
+data3 <- data.frame(mz3, intensity3)
+
+ggplot(data3, aes(x=mz3, y=intensity3)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum3",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+```
+
+工业应用：溶剂和中间体，用于制造树脂、药物、农药等
+
+生物学意义：具有抗菌、抗真菌和抗病毒的性质，作为香味成分存在
 
 参考网址：
 
@@ -68,5 +118,4 @@ RI (Searched)：
 
 <https://webbook.nist.gov/chemistry/name-ser/>
 
-<https://foodb.ca/compounds/FDB014416>
-
+<https://foodb.ca/compounds/>

@@ -1,0 +1,123 @@
+---
+title: "trans-beta-Ocimene"
+format: html
+editor: visual
+execute: 
+  echo: false
+---
+
+## 基本信息
+
+英文名：trans-beta-Ocimene
+
+中文名：反式-β-罗勒烯
+
+CAS#：3779-61-1
+
+化合物分类：单环单萜（Monocyclic Monoterpenes）
+
+环数：0
+
+芳香环数：0
+
+氢键供体：0
+
+氢键受体：0
+
+脂水分配系数：4.5
+
+IUPAC name：(3E)-3,7-Dimethylocta-1,3,6-triene
+
+InChl：1S/C15H24/c1-6-8-12(3)10-11-13(4)14(5)9-7-2/h6,9-10H,2-5,7-8H2,1H3/b14-10+
+
+InChlKey：VEJZZMCTXAAMIN-UHFFFAOYSA-N
+
+Canonical SMILES：CC=CC(C)=CC
+
+Isomeric SMILES：CC=CC(C)=CC
+
+RT：12.548
+
+化学式：C10H16
+
+分子量：136.23
+
+沸点：174.00
+
+Pressure：760.00 mm Hg
+
+蒸汽压 (mmHg)：1.559
+
+温度 (℃)：25
+
+RI (Searched)：1050
+
+结构式：
+
+是否是天然：是
+
+化合物类别：单萜
+
+质谱：
+
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
+
+# 图1
+mz1 <- c(25, 26, 27, 29, 30, 37, 38, 39, 40, 41, 42, 43, 44, 46, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 85, 86, 88, 89, 91, 92, 93, 94, 95, 101, 102, 103, 104, 105, 106, 107, 108, 109, 115, 116, 117, 118, 119, 120, 121, 122, 133, 134, 135, 136, 137)
+intensity1 <- c(5, 80, 1900, 1350, 20, 50, 130, 2190, 400, 3180, 200, 1310, 40, 5, 10, 210, 660, 350, 1540, 160, 1260, 90, 20, 40, 10, 20, 70, 250, 70, 610, 240, 1000, 420, 230, 10, 30, 10, 50, 90, 40, 2690, 490, 2970, 1560, 710, 60, 10, 5, 10, 10, 120, 2820, 2450, 9999, 840, 130, 10, 20, 190, 60, 1300, 450, 560, 70, 40, 50, 20, 50, 5, 270, 80, 1330, 130, 5, 10, 20, 190, 20)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(26, 27, 29, 38, 39, 40, 41, 42, 43, 50, 51, 52, 53, 54, 55, 56, 62, 63, 65, 66, 67, 68, 69, 77, 78, 79, 80, 81, 82, 89, 90, 91, 92, 93, 94, 95, 103, 105, 106, 107, 119, 121, 122, 136)
+intensity2 <- c(100, 3000, 2100, 100, 3200, 500, 4100, 200, 1700, 300, 800, 400, 1900, 200, 1400, 100, 100, 200, 700, 300, 1200, 500, 200, 3000, 600, 3400, 1800, 800, 100, 300, 100, 3100, 3400, 9999, 1000, 100, 100, 1400, 400, 500, 300, 1500, 100, 300)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图3
+mz3 <- c(15, 26, 27, 28, 29, 37, 38, 39, 40, 41, 42, 43, 44, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 61, 62, 63, 64, 65, 66, 67, 68, 69, 74, 75, 76, 77, 78, 79, 80, 81, 82, 89, 91, 92, 93, 94, 95, 102, 103, 104, 105, 106, 107, 108, 109, 115, 116, 117, 118, 119, 120, 121, 122, 135, 136, 137)
+intensity3 <- c(20, 40, 800, 100, 630, 20, 110, 1910, 330, 2640, 170, 1070, 40, 250, 780, 370, 1710, 180, 1130, 90, 40, 50, 10, 20, 80, 270, 60, 830, 220, 1100, 320, 170, 40, 30, 30, 3210, 510, 3700, 1580, 570, 60, 50, 4490, 3950, 9999, 950, 100, 30, 290, 80, 1590, 410, 520, 70, 30, 90, 20, 70, 20, 310, 70, 1020, 110, 10, 130, 10)
+
+data3 <- data.frame(mz3, intensity3)
+
+ggplot(data3, aes(x=mz3, y=intensity3)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum3",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5)) 
+
+
+```
+
+工业应用：香料和香精工业，用于制备香料和医药中间体
+
+生物学意义：具有驱虫和抗菌作用
+
+参考网址：
+
+<https://pubchem.ncbi.nlm.nih.gov/>
+
+<https://webbook.nist.gov/chemistry/name-ser/>
+
+<https://foodb.ca/compounds/>

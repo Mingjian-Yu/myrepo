@@ -13,11 +13,11 @@ number-sections: true
 
 [2-Ethylfuran](2-Ethylfuran.qmd)
 
-[Isoamyl alcohol](Isoamyl alcohol.qmd)
+[Isoamyl alcohol](Isoamyl%20alcohol.qmd)
 
 [Toluene](Toluene.qmd)
 
-[Acetic acid,butyl ester](Acetic acid,butyl ester.qmd)
+[Acetic acid,butyl ester](Acetic%20acid,butyl%20ester.qmd)
 
 [Hexane,1-methoxy-](Hexane,1-methoxy-.qmd)
 
@@ -32,6 +32,3 @@ number-sections: true
 [Tricyclene](Tricyclene.qmd)
 
 [Linalool](Linalool.qmd)
-
-
-

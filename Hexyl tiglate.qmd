@@ -1,0 +1,108 @@
+---
+title: "Hexyl tiglate"
+format: html
+editor: visual
+execute: 
+  echo: false
+---
+
+## 基本信息
+
+英文名：Hexyl tiglate
+
+中文名：(E)-2-甲基-2-丁烯酸己酯
+
+CAS#：16930-96-4
+
+化合物分类：酯 (Ester)
+
+环数：0
+
+芳香环数：0
+
+氢键供体：0
+
+氢键受体：2
+
+脂水分配系数：4.263 
+
+IUPAC name：hexyl (E)-2-methylbut-2-enoate
+
+InChl：1S/C11H20O2/c1-4-6-7-8-9-13-11(12)10(3)5-2/h5H,4,6-9H2,1-3H3/b10-5+
+
+InChlKey：JTCIUOKKVACNCK-BJMVGYQFSA-N
+
+Canonical SMILES：CCCCCCOC(=O)C(=CC)C
+
+Isomeric SMILES：CCCCCCOC(=O)/C(=C/C)/C
+
+RT：40.332
+
+化学式：C11H20O2
+
+分子量：184.28
+
+沸点：108.00
+
+Pressure：16 mm Hg
+
+蒸汽压 (mmHg)：0.052
+
+温度 (℃)：25
+
+RI (Searched)：1331
+
+结构式：
+
+是否是天然：是
+
+化合物类别：酯
+
+质谱：
+
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
+
+# 图1
+mz1 <- c(15, 26, 27, 28, 29, 30, 31, 37, 38, 39, 40, 41, 42, 43, 44, 45, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 81, 82, 83, 84, 85, 86, 87, 95, 96, 97, 98, 99, 100, 101, 102, 103, 109, 110, 111, 112, 113, 114, 115, 123, 124, 125, 127, 128, 129, 139, 141, 142, 143, 151, 155, 156, 166, 167, 169, 170, 184, 185)
+intensity1 <- c(10, 30, 510, 150, 790, 20, 20, 10, 20, 620, 90, 870, 430, 1180, 60, 90, 40, 80, 50, 430, 400, 3910, 1470, 420, 30, 30, 10, 10, 70, 30, 730, 60, 30, 30, 150, 20, 50, 570, 6020, 1000, 630, 30, 20, 30, 10, 20, 40, 170, 1440, 9999, 600, 50, 20, 60, 340, 40, 100, 120, 20, 40, 10, 10, 80, 10, 20, 10, 40, 30, 20, 20, 30, 10, 20, 20, 270, 30, 140, 20)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(26, 27, 29, 39, 41, 42, 43, 45, 51, 52, 53, 54, 55, 56, 57, 69, 73, 82, 83, 84, 85, 99, 100, 101, 102, 111)
+intensity2 <- c(110, 2500, 3220, 1860, 2600, 1310, 3380, 180, 170, 110, 1010, 890, 8210, 2870, 470, 920, 130, 460, 7830, 1250, 460, 130, 1620, 9999, 460, 170)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+```
+
+工业应用：医药、农化、特种化工行业，香料成分
+
+生物学意义：可降解性
+
+参考网址：
+
+<https://pubchem.ncbi.nlm.nih.gov/>
+
+<https://webbook.nist.gov/chemistry/name-ser/>
+
+<https://foodb.ca/compounds/>

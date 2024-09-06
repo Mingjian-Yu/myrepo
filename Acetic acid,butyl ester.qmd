@@ -2,65 +2,129 @@
 title: "Acetic acid,butyl ester"
 format: html
 editor: visual
+execute: 
+  echo: false
 ---
 
 ## 基本信息
 
-英文名：
+英文名：Acetic acid,butyl ester
 
-中文名：
+中文名：丁酸乙酯
 
-CAS#：
+CAS#：123-86-4
 
-化合物分类：
+化合物分类：酯类（Esters）
 
-环数：
+环数：0
 
-芳香环数：
+芳香环数：0
 
-氢键供体：
+氢键供体：0
 
-氢键受体：
+氢键受体：2
 
-脂水分配系数：
+脂水分配系数：1.85
 
-IUPAC name：
+IUPAC name：Ethyl butanoate
 
-InChl：
+InChl：1S/C6H12O2/c1-3-5-6(7)8-4-2/h3-5H2,1-2H3
 
-InChlKey：
+InChlKey：ODGCEQLVLXJUCC-UHFFFAOYSA-N
 
-Canonical SMILES：
+Canonical SMILES：CCCC(=O)OCC
 
-Isomeric SMILES：
+Isomeric SMILES：CCCC(=O)OCC
 
-RT：
+RT：4.240
 
-化学式：
+化学式：C6H12O2
 
-分子量：
+分子量：116.16
 
-沸点：
+沸点：121
 
-Pressure：
+Pressure：760.00 mm Hg
 
-蒸汽压 (mmHg)：
+蒸汽压 (mmHg)：11.5
 
-温度 (℃)：
+温度 (℃)：25
 
-RI (Searched)：
+RI (Searched)：812
 
 结构式：
 
-是否是天然：
+是否是天然：是
 
-化合物类别：
+化合物类别：酯
 
 质谱：
 
-工业应用：
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
 
-生物学意义：
+# 图1
+mz1 <- c(14, 15, 16, 18, 19, 25, 26, 27, 28, 29, 30, 31, 37, 38, 39, 40, 41, 42, 43, 44, 45, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 70, 71, 72, 73, 74, 75, 83, 86, 87, 88, 98, 101, 115)
+intensity1 <- c(120, 750, 10, 20, 10, 10, 190, 1250, 600, 1290, 70, 200, 30, 80, 840, 160, 1890, 610, 9999, 320, 120, 30, 40, 10, 70, 40, 720, 3710, 420, 170, 10, 40, 1460, 30, 10, 10, 200, 50, 1810, 70, 10, 10, 90, 170, 20, 10, 30, 10)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(14, 15, 17, 18, 19, 26, 27, 28, 29, 30, 31, 32, 38, 39, 40, 41, 42, 43, 44, 45, 51, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 71, 72, 73, 74, 75, 86, 87, 88, 91, 101, 116, 117)
+intensity2 <- c(40, 360, 10, 90, 10, 60, 500, 270, 660, 10, 170, 40, 20, 270, 70, 1470, 210, 9999, 260, 70, 20, 30, 20, 740, 4420, 410, 200, 30, 30, 1440, 30, 170, 40, 1420, 60, 10, 80, 110, 20, 10, 20, 10, 20)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图3
+mz3 <- c(26, 27, 28, 29, 39, 40, 41, 42, 43, 44, 55, 56, 57, 58, 61, 71, 73, 74, 86, 87)
+intensity3 <- c(210, 1180, 680, 1000, 850, 170, 2790, 580, 9999, 430, 1000, 5500, 630, 220, 1870, 230, 2730, 100, 130, 250)
+
+data3 <- data.frame(mz3, intensity3)
+
+ggplot(data3, aes(x=mz3, y=intensity3)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum3",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图4
+mz4 <- c(26, 27, 28, 29, 30, 31, 37, 38, 39, 40, 41, 42, 43, 44, 45, 50, 51, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 70, 71, 72, 73, 74, 83, 86, 87, 88, 98, 101, 115, 116, 117)
+intensity4 <- c(120, 1110, 530, 1310, 50, 220, 10, 50, 790, 130, 2690, 500, 9999, 550, 120, 30, 40, 70, 50, 1300, 6830, 840, 250, 10, 40, 2390, 50, 20, 280, 60, 3300, 110, 20, 180, 300, 40, 20, 40, 10, 10, 30)
+
+data4 <- data.frame(mz4, intensity4)
+
+ggplot(data4, aes(x=mz4, y=intensity4)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum3",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+```
+
+工业应用：食品、饮料和香料工业中作为香料和香精；也用于有机合成中间体
+
+生物学意义：赋予水果香味
 
 参考网址：
 
@@ -68,6 +132,4 @@ RI (Searched)：
 
 <https://webbook.nist.gov/chemistry/name-ser/>
 
-<https://foodb.ca/compounds/FDB014416>
-
-
+<https://foodb.ca/compounds/>

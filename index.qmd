@@ -2,6 +2,16 @@
 title: "天然产物数据库介绍"
 format: html
 editor: visual
+listing:
+  contents: 
+    - "posts/薰衣草/*.qmd"
+    - "posts/化合物/*.qmd"
+  type: grid
+  sort-ui: true
+  filter-ui: true
+image: true
+---
+
 ---
 
 ## 介绍
@@ -22,6 +32,4 @@ editor: visual
 
 通过细胞实验和动物实验，研究中药的药理作用和毒性。 例子：研究黄芪的免疫增强作用，三七的抗血栓作用。
 
-## 
-
-中医药作为中国古代科学的瑰宝，在现代医学和药物开发中发挥着越来越重要的作用。通过现代科学手段，中医药的有效成分和作用机制得到了更深入的揭示，为人类健康做出了重要贡献。
+## 数据库收录

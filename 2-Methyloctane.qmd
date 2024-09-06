@@ -2,65 +2,129 @@
 title: "2-Methyloctane"
 format: html
 editor: visual
+execute: 
+  echo: false
 ---
 
 ## 基本信息
 
-英文名：
+英文名：2-Methyloctane
 
-中文名：
+中文名：2-甲基辛烷
 
-CAS#：
+CAS#：3221-61-2
 
-化合物分类：
+化合物分类：烷烃（Alkanes）
 
-环数：
+环数：0
 
-芳香环数：
+芳香环数：0
 
-氢键供体：
+氢键供体：0
 
-氢键受体：
+氢键受体：0
 
-脂水分配系数：
+脂水分配系数：4.82
 
-IUPAC name：
+IUPAC name：2-Methyloctane
 
-InChl：
+InChl：1S/C9H20/c1-3-5-6-7-8-9(2)4/h9H,3-8H2,1-2H3
 
-InChlKey：
+InChlKey：SHZGCJCMOBCMKK-UHFFFAOYSA-N
 
-Canonical SMILES：
+Canonical SMILES：CCCCCCC(C)C
 
-Isomeric SMILES：
+Isomeric SMILES：CCCCCCC(C)C
 
-RT：
+RT：N/A
 
-化学式：
+化学式：C9H20
 
-分子量：
+分子量：128.25
 
-沸点：
+沸点：143
 
-Pressure：
+Pressure：760.00 mm Hg
 
-蒸汽压 (mmHg)：
+蒸汽压 (mmHg)：6.21
 
-温度 (℃)：
+温度 (℃)：25
 
-RI (Searched)：
+RI (Searched)：858
 
 结构式：
 
-是否是天然：
+是否是天然：是
 
-化合物类别：
+化合物类别：醇
 
 质谱：
 
-工业应用：
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
 
-生物学意义：
+# 图1
+mz1 <- c(26, 27, 28, 29, 30, 39, 40, 41, 42, 43, 44, 51, 53, 54, 55, 56, 57, 58, 69, 70, 71, 72, 84, 85, 86, 99, 112, 113, 114, 128)
+intensity1 <- c(100, 2100, 400, 2300, 100, 1000, 200, 3500, 2800, 9999, 300, 100, 200, 100, 900, 1500, 5100, 200, 400, 200, 2800, 100, 1300, 1700, 100, 100, 200, 700, 100, 200)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(26, 27, 28, 29, 30, 38, 39, 40, 41, 42, 43, 44, 47, 48, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 65, 66, 67, 68, 69, 70, 71, 72, 73, 77, 78, 79, 81, 82, 83, 84, 85, 86, 87, 97, 98, 99, 100, 111, 112, 113, 114, 115, 127, 128, 129)
+intensity2 <- c(50, 1700, 330, 2180, 50, 10, 750, 160, 3210, 2740, 9999, 320, 10, 10, 10, 10, 10, 120, 80, 900, 1500, 5110, 220, 10, 10, 10, 40, 20, 350, 190, 2700, 150, 10, 10, 10, 10, 10, 10, 30, 1400, 1720, 120, 10, 10, 40, 90, 10, 10, 190, 770, 60, 10, 10, 230, 20)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图3
+mz3 <- c(26, 27, 28, 29, 30, 31, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 77, 78, 79, 81, 82, 83, 84, 85, 86, 87, 91, 97, 98, 99, 100, 111, 112, 113, 114, 128, 129)
+intensity3 <- c(60, 1110, 260, 1780, 30, 10, 5, 20, 670, 100, 2610, 2150, 9999, 300, 10, 5, 5, 5, 5, 20, 10, 110, 60, 790, 1130, 4280, 210, 60, 5, 5, 5, 20, 5, 30, 10, 360, 120, 2350, 130, 5, 5, 5, 5, 5, 10, 30, 830, 1070, 60, 5, 5, 5, 20, 50, 5, 5, 100, 300, 20, 70, 10)
+
+data3 <- data.frame(mz3, intensity3)
+
+ggplot(data3, aes(x=mz3, y=intensity3)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum3",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+# 图4
+mz4 <- c(26, 27, 28, 29, 30, 37, 38, 39, 40, 41, 42, 43, 44, 45, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 62, 63, 65, 66, 67, 68, 69, 70, 71, 72, 73, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 91, 97, 98, 99, 100, 111, 112, 113, 114, 115, 126, 127, 128, 129)
+intensity4 <- c(30, 680, 160, 980, 20, 10, 50, 1440, 280, 4880, 2740, 9999, 350, 10, 40, 110, 50, 390, 170, 1760, 3080, 9480, 430, 10, 10, 30, 70, 20, 140, 50, 1300, 520, 8590, 490, 10, 50, 10, 40, 10, 20, 40, 150, 5150, 5370, 350, 10, 10, 20, 130, 400, 30, 10, 810, 2000, 170, 10, 10, 20, 750, 70)
+
+data4 <- data.frame(mz4, intensity4)
+
+ggplot(data4, aes(x=mz4, y=intensity4)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum4",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+```
+
+工业应用：有机合成和作为溶剂
+
+生物学意义：N/A
 
 参考网址：
 
@@ -68,6 +132,4 @@ RI (Searched)：
 
 <https://webbook.nist.gov/chemistry/name-ser/>
 
-<https://foodb.ca/compounds/FDB014416>
-
-
+<https://foodb.ca/compounds/>

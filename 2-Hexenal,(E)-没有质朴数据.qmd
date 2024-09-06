@@ -1,0 +1,123 @@
+---
+title: "2-Hexenal,(E)-"
+format: html
+editor: visual
+execute: 
+  echo: false
+---
+
+## 基本信息
+
+英文名：2-Hexenal,(E)-
+
+中文名：乙烯醛
+
+CAS#： 6728-26-3
+
+化合物分类：醛类（Aldehydes）、不饱和醛（Unsaturated Aldehydes）
+
+环数：0
+
+芳香环数：0
+
+氢键供体：0
+
+氢键受体：1
+
+脂水分配系数：-0.01
+
+IUPAC name：Prop-2-enal
+
+InChl：1S/C3H4O/c1-2-3-4/h2-3H,1H2
+
+InChlKey：HGINCPLSRVDWNT-UHFFFAOYSA-N
+
+Canonical SMILES：C=CC=O
+
+Isomeric SMILES：C=CC=O
+
+RT：5.000
+
+化学式：C6H10O
+
+分子量：98
+
+沸点：146.00
+
+Pressure：760.00 mm Hg
+
+蒸汽压 (mmHg)：4.624
+
+温度 (℃)：25
+
+RI (Searched)：850
+
+结构式：
+
+是否是天然：是
+
+化合物类别：醛
+
+质谱：没有数据
+
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
+
+# 图1
+mz1 <- c(15, 26, 27, 28, 29, 30, 31, 33, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 63, 65, 66, 67, 68, 69, 70, 71, 72, 73, 77, 79, 81, 82, 83, 84, 85, 86, 87, 88, 98, 115, 116)
+intensity1 <- c(110, 50, 620, 210, 940, 40, 110, 310, 10, 40, 720, 130, 1690, 1160, 1320, 9999, 250, 140, 30, 50, 20, 150, 150, 1690, 5590, 350, 140, 70, 30, 10, 20, 10, 60, 50, 1280, 210, 80, 10, 50, 10, 10, 10, 20, 130, 1550, 130, 10, 80, 10, 10, 10, 10)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(15, 27, 28, 29, 31, 33, 39, 41, 42, 43, 45, 46, 47, 55, 56, 57, 69, 70, 84, 85)
+intensity2 <- c(500, 1160, 140, 1090, 130, 480, 710, 1550, 1190, 1170, 9999, 190, 100, 1210, 4160, 190, 890, 120, 1290, 100)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图3
+mz3 <- c(27, 28, 29, 30, 31, 33, 34, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 63, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 77, 79, 81, 82, 83, 84, 85, 86, 87, 88, 98, 115, 116)
+intensity3 <- c(600, 50, 680, 20, 120, 530, 5, 10, 10, 380, 70, 1160, 1090, 1120, 60, 9999, 230, 120, 5, 5, 10, 5, 70, 100, 1160, 4380, 250, 80, 50, 20, 5, 5, 5, 5, 30, 40, 940, 160, 60, 5, 40, 5, 5, 5, 5, 5, 80, 1360, 110, 5, 50, 5, 5, 10, 10)
+
+data3 <- data.frame(mz3, intensity3)
+
+ggplot(data3, aes(x=mz3, y=intensity3)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum3",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+
+```
+
+工业应用：有机合成中间体，用于生产丙烯酸及其酯类，农药及防腐剂等
+
+生物学意义：对细胞有毒性，可能引发氧化应激和细胞损伤
+
+参考网址：
+
+<https://pubchem.ncbi.nlm.nih.gov/>
+
+<https://webbook.nist.gov/chemistry/name-ser/>
+
+<https://foodb.ca/compounds/>

@@ -1,0 +1,108 @@
+---
+title: "Crypton"
+format: html
+editor: visual
+execute: 
+  echo: false
+---
+
+## 基本信息
+
+英文名：Crypton
+
+中文名：异丙基环已烯酮
+
+CAS#：500-02-7
+
+化合物分类：酮 (Ketone)，脂环族酮(alicyclic ketone)
+
+环数：1
+
+芳香环数：1
+
+氢键供体：0
+
+氢键受体：1
+
+脂水分配系数：1.589
+
+IUPAC name：4-propan-2-ylcyclohex-2-en-1-one
+
+InChl：1S/C9H14O/c1-7(2)8-3-5-9(10)6-4-8/h3,5,7-8H,4,6H2,1-2H3
+
+InChlKey：AANMVENRNJYEMK-UHFFFAOYSA-N
+
+Canonical SMILES：CC(C)C1CCC(=O)C=C1
+
+Isomeric SMILES：N/A
+
+RT：26.449
+
+化学式：C9H14O
+
+分子量：138.21
+
+沸点：198.00
+
+Pressure：760.00 mm Hg
+
+蒸汽压 (mmHg)：0.213
+
+温度 (℃)：25
+
+RI (Searched)：1188
+
+结构式：
+
+是否是天然：是
+
+化合物类别：单萜酮
+
+质谱：
+
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
+
+# 图1
+mz1 <- c(26, 27, 28, 29, 33, 37, 38, 39, 40, 41, 42, 43, 44, 46, 50, 51, 52, 53, 54, 55, 56, 57, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 74, 77, 78, 79, 80, 81, 82, 83, 84, 94, 95, 96, 97, 98, 105, 109, 110, 120, 123, 124, 138, 139)
+intensity1 <- c(50, 510, 120, 100, 10, 40, 170, 1910, 470, 2880, 250, 2790, 80, 10, 200, 400, 250, 730, 400, 1150, 230, 30, 20, 80, 250, 70, 980, 1220, 3560, 1620, 450, 230, 20, 530, 270, 680, 120, 2210, 640, 570, 50, 230, 7880, 9999, 1720, 110, 120, 470, 410, 430, 840, 80, 1750, 140)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 88, 91, 92, 93, 94, 95, 96, 97, 98, 99, 103, 104, 105, 106, 107, 108, 109, 110, 111, 115, 119, 120, 121, 122, 123, 124, 134, 136, 137, 138, 139, 141)
+intensity2 <- c(20, 110, 1490, 410, 2970, 210, 4520, 150, 50, 20, 10, 5, 90, 230, 120, 500, 420, 1280, 230, 30, 5, 5, 10, 40, 100, 20, 430, 640, 2560, 1640, 370, 260, 10, 5, 5, 5, 5, 350, 150, 430, 110, 2160, 660, 740, 50, 5, 5, 100, 60, 90, 250, 6350, 9999, 2140, 120, 5, 5, 5, 130, 10, 30, 5, 350, 340, 20, 5, 5, 400, 60, 10, 610, 40, 5, 10, 20, 2180, 210, 10)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+```
+
+工业应用：香精香料行业
+
+生物学意义：营养物质
+
+参考网址：
+
+<https://pubchem.ncbi.nlm.nih.gov/>
+
+<https://webbook.nist.gov/chemistry/name-ser/>
+
+<https://foodb.ca/compounds/>

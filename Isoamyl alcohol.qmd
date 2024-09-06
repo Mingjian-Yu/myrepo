@@ -2,65 +2,143 @@
 title: "Isoamyl alcohol"
 format: html
 editor: visual
+execute: 
+  echo: false
 ---
 
 ## 基本信息
 
-英文名：
+英文名：Isoamyl alcohol
 
-中文名：
+中文名：异戊醇
 
-CAS#：
+CAS#：123-51-3
 
-化合物分类：
+化合物分类：醇类（Alcohols）
 
-环数：
+环数：0
 
-芳香环数：
+芳香环数：0
 
-氢键供体：
+氢键供体：1
 
-氢键受体：
+氢键受体：1
 
-脂水分配系数：
+脂水分配系数：1.3
 
-IUPAC name：
+IUPAC name：3-Methylbutan-1-ol
 
-InChl：
+InChl：1S/C5H12O/c1-5(2)3-4-6/h5-6H,3-4H2,1-2H3
 
-InChlKey：
+InChlKey：PHTQWCKDNZKARW-UHFFFAOYSA-N
 
-Canonical SMILES：
+Canonical SMILES：CC(C)CCO
 
-Isomeric SMILES：
+Isomeric SMILES：CC(C)CCO
 
-RT：
+RT：3.187
 
-化学式：
+化学式：C5H12O
 
-分子量：
+分子量：88.15
 
-沸点：
+沸点：131.00
 
-Pressure：
+Pressure：760.00 mm Hg
 
-蒸汽压 (mmHg)：
+蒸汽压 (mmHg)：28
 
-温度 (℃)：
+温度 (℃)：20
 
-RI (Searched)：
+RI (Searched)：730
 
-结构式：
+结构式：![](images/isoamyl-1.png)![](images/isoamyl-2.png)
 
-是否是天然：
+是否是天然：是
 
-化合物类别：
+化合物类别：醇
 
 质谱：
 
-工业应用：
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
+# 图1
+mz1 <- c(14, 15, 16, 19, 26, 27, 28, 29, 30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 65, 66, 67, 68, 69, 70, 71, 72, 73, 87)
+intensity1 <- c(20, 140, 10, 60, 140, 1550, 490, 1810, 80, 2040, 20, 10, 10, 90, 240, 2540, 420, 5670, 5860, 5140, 460, 1340, 530, 110, 10, 30, 170, 220, 60, 450, 220, 9999, 1090, 2270, 130, 60, 80, 20, 10, 20, 20, 10, 60, 20, 540, 6130, 490, 30, 50, 20)
 
-生物学意义：
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(15, 19, 26, 27, 28, 29, 30, 31, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 50, 51, 53, 54, 55, 56, 57, 58, 59, 69, 70, 71)
+intensity2 <- c(510, 200, 290, 3500, 1040, 4930, 160, 4770, 270, 3400, 500, 8390, 7690, 6580, 560, 1770, 680, 110, 150, 180, 420, 150, 9999, 3230, 4750, 220, 140, 560, 7500, 580)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图3
+mz3 <- c(24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 86, 87, 88, 89, 90)
+intensity3 <- c(10, 10, 340, 5220, 710, 5370, 100, 5140, 40, 30, 10, 10, 5, 110, 280, 2710, 410, 8480, 8770, 6770, 480, 1970, 740, 120, 5, 20, 110, 140, 40, 300, 120, 9999, 1020, 2100, 100, 50, 70, 10, 10, 10, 10, 5, 30, 10, 320, 4280, 260, 20, 10, 5, 5, 5, 5, 20, 5, 5, 5)
+
+data3 <- data.frame(mz3, intensity3)
+
+ggplot(data3, aes(x=mz3, y=intensity3)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum3",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5)) 
+
+# 图4
+mz4 <- c(12, 13, 14, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 65, 66, 67, 68, 69, 70, 71, 72, 73, 77, 79, 85, 86, 87, 88)
+intensity4 <- c(60, 120, 440, 2010, 120, 150, 430, 440, 10, 10, 50, 660, 5940, 1900, 5940, 230, 6120, 90, 40, 10, 10, 20, 250, 530, 4360, 680, 8050, 8960, 8230, 670, 1990, 780, 150, 10, 60, 220, 250, 70, 280, 170, 9999, 1280, 3070, 160, 70, 100, 30, 10, 20, 10, 10, 50, 20, 530, 7050, 490, 30, 70, 10, 10, 10, 10, 70, 10)
+
+data4 <- data.frame(mz4, intensity4)
+
+ggplot(data4, aes(x=mz4, y=intensity4)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum4",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+
+# 图5
+mz5 <- c(14, 15, 16, 17, 18, 19, 26, 27, 28, 29, 30, 31, 32, 33, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 67, 69, 70, 71, 72, 73, 87)
+intensity5 <- c(30, 280, 10, 30, 190, 290, 160, 2560, 990, 3270, 70, 3540, 40, 20, 60, 140, 1800, 300, 5980, 8700, 6890, 290, 1740, 820, 150, 70, 90, 20, 230, 120, 9999, 1170, 2530, 110, 50, 80, 10, 30, 550, 6960, 520, 30, 70, 30)
+
+data5 <- data.frame(mz5, intensity5)
+
+ggplot(data5, aes(x=mz5, y=intensity5)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum5",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+```
+
+工业应用：溶剂、萃取剂及化学合成中间体，用于香料和香精、药物及涂料等领域
+
+生物学意义：影响发酵饮料的风味
 
 参考网址：
 
@@ -68,4 +146,4 @@ RI (Searched)：
 
 <https://webbook.nist.gov/chemistry/name-ser/>
 
-<https://foodb.ca/compounds/FDB014416>
+<https://foodb.ca/compounds/>

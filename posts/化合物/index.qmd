@@ -1,0 +1,191 @@
+---
+title: "天然产物检索"
+format: html
+editor: visual
+number-sections: true
+image: 化合物.png
+---
+
+## 研究目的
+
+通过湿实验得到化合物的表征信息，收集现有的化合物药用价值和对疾病的影响，把天然产物，化合物的功效与人体的疾病或者改变联系起来。方便查询各种天然产物的基本信息包括化学成分和药用效果。
+
+## 化合物种类
+
+[2-Ethylfuran](2-Ethylfuran.qmd)
+
+[Isoamyl alcohol](Isoamyl alcohol.qmd)
+
+[Toluene](Toluene.qmd)
+
+[Acetic acid,butyl ester](Acetic%20acid,butyl%20ester.qmd)
+
+[Hexane,1-methoxy-](Hexane,1-methoxy-.qmd)
+
+[2-Hexenal,(E)-](2-Hexenal,(E)-.qmd)
+
+[3-Hexen-1-ol,(Z)-](3-Hexen-1-ol,(Z)-.qmd)
+
+[2-Methyloctane](2-Methyloctane.qmd)
+
+[1-Hexanol](1-Hexanol.qmd)
+
+[Tricyclene](Tricyclene.qmd)
+
+[alpha-Thujene](alpha-Thujene.qmd)
+
+[alpha-pinene](alpha-pinene.qmd)
+
+[Camphene](Camphene.qmd)
+
+[Dehydrosabinene](Dehydrosabinene.qmd)
+
+[Sabinene](Sabinene.qmd)
+
+[1-Octen-3-ol](1-Octen-3-ol.qmd)
+
+[3-Octanone](3-Octanone.qmd)
+
+[beta-Myrcene](beta-Myrcene.qmd)
+
+[3-Octanol](3-Octanol.qmd)
+
+[alpha-Phellandrene](alpha-Phellandrene.qmd)
+
+[3-Carene](3-Carene.qmd)
+
+[Acetic acid,hexyl ester](Acetic acid,hexyl ester.qmd)
+
+[1,4-Cineole](1,4-Cineole.qmd)
+
+[1p-Cymene](p-Cymene.qmd)
+
+[o-Cymene](o-Cymene.qmd)
+
+[D-Limonene](D-Limonene.qmd)
+
+[Eucalyptol](Eucalyptol.qmd)
+
+[cis-beta-Ocimene](cis-beta-Ocimene.qmd)
+
+[trans-beta-Ocimene](trans-beta-Ocimene.qmd)
+
+[gamma-Terpinene](gamma-Terpinene.qmd)
+
+[4-Thujanol](4-Thujanol.qmd)
+
+[cis-Linalool oxide](cis-Linalool oxide.qmd)
+
+[trans-Linalool oxide (furanoid)](trans-Linalool oxide (furanoid).qmd)
+
+[alpha-Terpinolene](alpha-Terpinolene.qmd)
+
+[Linalool](Linalool.qmd)
+
+[Hotrienol](Hotrienol.qmd)
+
+[1-Octen-3-yl-acetate](1-Octen-3-yl-acetate.qmd)
+
+[3-Octanol,acetate](3-Octanol,acetate.qmd)
+
+[HNeo-allo-Ocimene](Neo-allo-Ocimene.qmd)
+
+[Camphor](Camphor.qmd)
+
+[Hexyl isobutyrate](Hexyl isobutyrate.qmd)
+
+[endo-Borneol](endo-Borneol.qmd)
+
+[Lavandulol](Lavandulol.qmd)
+
+[********(-)-Terpinen-4-ol](ol.qmd)
+
+[p-Cymen-8-ol](p-Cymen-8-ol.qmd)
+
+[Crypton](Crypton.qmd)
+
+[alpha-Terpineol](alpha-Terpineol.qmd)
+
+[Butanoic acid,hexyl ester](Butanoic acid,hexyl ester.qmd)
+
+[Bornyl formate](Bornyl formate.qmd)
+
+[Neryl alcohol](Neryl alcohol.qmd)
+
+[Cumic aldehyde](Cumic aldehyde.qmd)
+
+[Butanoic acid,2-methyl-,hexyl ester](Butanoic acid,2-methyl-,hexyl ester.qmd)
+
+[Geraniol](Geraniol.qmd)
+
+[Linalyl acetate](Linalyl acetate.qmd)
+
+[Phellandral](Phellandral.qmd)
+
+[*******(-)-Bornyl acetate](acetate.qmd)
+
+[Cuminol](Cuminol.qmd)
+
+[Lavandulyl acetate](Lavandulyl acetate.qmd)
+
+[Thymol](Thymol.qmd)
+
+[Carvacrol](Carvacrol.qmd)
+
+[Hexyl tiglate](Hexyl tiglate.qmd)
+
+[2,7-Octadiene-1,6-diol,2,6-dimethyl-](2,7-Octadiene-1,6-diol,2,6-dimethyl-.qmd)
+
+[Butanoic acid,phenylmethyl ester](Butanoic acid,phenylmethyl ester.qmd)
+
+[linalyl propionate](linalyl propionate.qmd)
+
+[lavandulyl propionate](lavandulyl propionate.qmd)
+
+[Neryl acetate](Neryl acetate.qmd)
+
+[alpha-Cubebene](alpha-Cubebene.qmd)
+
+[*********(-)-beta-Bourbonene](Bourbonene.qmd)
+
+[Geranyl acetate](Geranyl acetate.qmd)
+
+[*********(-)-alpha-cedrene](cedrene.qmd)
+
+[cis-alpha-Bergamotene](cis-alpha-Bergamotene.qmd)
+
+[*********(-)-trans-Caryophyllene](Caryophyllene.qmd)
+
+[Santalene](Santalene.qmd)
+
+[Coumarin](Coumarin.qmd)
+
+[Sesquithujene](Sesquithujene.qmd)
+
+[alpha-trans-Bergamotene](alpha-trans-Bergamotene.qmd)
+
+[*********(-)-beta-Santalene](Santalene.qmd)
+
+[alpha-Caryophyllene](alpha-Caryophyllene.qmd)
+
+[Isocaryopheyllene](Isocaryopheyllene.qmd)
+
+[cis-beta-Farnesene](cis-beta-Farnesene.qmd)
+
+[Germacrene D](SGermacrene D.qmd)
+
+[beta-Selinene](beta-Selinene.qmd)
+
+[delta-bisabolene](delta-bisabolene.qmd)
+
+[********(-)-beta-bisabolene](bisabolene.qmd)
+
+[gamma-Muurolene](gamma-Muurolene.qmd)
+
+[gamma-Elemene](gamma-Elemene.qmd)
+
+[beta-Caryophyllene epoxide](beta-Caryophyllene epoxide.qmd)
+
+[Caryoaphyllene oxide](Caryoaphyllene oxide.qmd)
+
+[tau-Cadinol](tau-Cadinol.qmd)

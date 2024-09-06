@@ -8,8 +8,10 @@ website:
     search: true
     title: false
     left:
+      - href: index.qmd
+        text: 主页
       - href: 薰衣草.qmd
-        text: 首页
+        text: 天然产物检索
       - href: 化合物.qmd
         text: 天然产物检索
       - href: about.qmd
@@ -19,5 +21,7 @@ format:
   html:
     theme: cosmo
     toc: true
+    code-copy: true
+    code-overflow: wrap
 
 editor: visual

@@ -1,0 +1,149 @@
+---
+title: "Hexyl isobutyrate"
+format: html
+editor: visual
+execute: 
+  echo: false
+---
+
+## 基本信息
+
+英文名：Hexyl isobutyrate
+
+中文名：异丁酸己酯
+
+CAS#：2349-07-07
+
+化合物分类：酯 (Ester)
+
+环数：0
+
+芳香环数：0
+
+氢键供体：0
+
+氢键受体：2
+
+脂水分配系数：>4
+
+IUPAC name：Hexyl 2-methylpropanoate
+
+InChl：1S/C10H20O2/c1-3-5-7-9-11-12-10(12)6-4-2/h9,11H,3-8H2,1-2H3
+
+InChlKey：UGJYLBTLXSXRAH-UHFFFAOYSA-N
+
+Canonical SMILES：CCCCCCOC(=O)C(C)C
+
+Isomeric SMILES：CCCCCCOC(=O)C(C)C
+
+RT：23.039
+
+化学式：C10H20O2
+
+分子量：172.26
+
+沸点：198.00
+
+Pressure：760.00 mm Hg
+
+蒸汽压 (mmHg)：0.413
+
+温度 (℃)：25
+
+RI (Searched)：1152
+
+结构式：
+
+是否是天然：是
+
+化合物类别：酯
+
+质谱：
+
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
+
+# 图1
+mz1 <- c(15, 26, 27, 28, 29, 30, 31, 37, 38, 39, 40, 41, 42, 43, 44, 45, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 79, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 99, 100, 101, 102, 111, 115, 116, 129, 130, 142)
+intensity1 <- c(20, 50, 830, 250, 640, 20, 60, 10, 30, 770, 180, 3010, 1480, 9999, 380, 70, 10, 30, 10, 140, 170, 1980, 3950, 980, 40, 50, 10, 10, 10, 70, 30, 1230, 170, 4260, 190, 200, 10, 10, 10, 20, 240, 2210, 390, 50, 30, 170, 5610, 250, 30, 140, 10, 240, 10, 10, 40, 10, 200, 20, 10)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(27, 28, 29, 37, 39, 40, 41, 42, 43, 44, 54, 55, 56, 57, 69, 70, 71, 72, 73, 83, 84, 85, 88, 89, 90, 99, 101, 129)
+intensity2 <- c(460, 80, 680, 280, 280, 70, 2260, 2260, 9999, 590, 80, 2260, 4110, 1650, 1450, 190, 4520, 190, 190, 190, 2490, 580, 70, 3650, 200, 70, 190, 70)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图3
+mz3 <- c(26, 27, 28, 29, 30, 31, 36, 38, 39, 40, 41, 42, 43, 44, 45, 51, 53, 54, 55, 56, 57, 69, 70, 71, 72, 73, 77, 80, 82, 83, 84, 85, 86, 89, 90, 101, 102, 115, 129, 130, 172)
+intensity3 <- c(150, 1230, 240, 790, 60, 120, 150, 110, 990, 150, 2550, 1750, 9999, 480, 80, 190, 150, 170, 1420, 2660, 890, 870, 380, 4060, 150, 180, 110, 70, 70, 350, 1920, 480, 60, 4020, 210, 110, 10, 60, 120, 20, 30)
+
+data3 <- data.frame(mz3, intensity3)
+
+ggplot(data3, aes(x=mz3, y=intensity3)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum3",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5)) 
+
+# 图4
+mz4 <- c(27, 29, 31, 32, 35, 39, 41, 42, 43, 45, 55, 56, 69, 70, 71, 72, 73, 83, 84, 88, 89, 90, 99, 101, 115, 117, 129, 141, 142)
+intensity4 <- c(500, 630, 100, 880, 80, 660, 2100, 1580, 9999, 90, 1850, 3700, 1220, 210, 7020, 380, 480, 410, 3140, 260, 7240, 290, 170, 400, 80, 40, 310, 40, 30)
+
+data4 <- data.frame(mz4, intensity4)
+
+ggplot(data4, aes(x=mz4, y=intensity4)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum4",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5)) 
+
+# 图5
+mz5 <- c(26, 27, 28, 29, 30, 31, 37, 39, 40, 41, 42, 43, 44, 45, 50, 51, 52, 55, 56, 62, 65, 69, 70, 71, 72, 73, 77, 79, 80, 81, 84, 88, 89, 90, 91, 92, 93, 94, 97, 98, 99, 101, 102, 105, 107, 111, 112, 115, 116, 120, 121, 122, 123, 125, 129, 130, 136, 137, 139, 140, 154)
+intensity5 <- c(30, 700, 230, 660, 20, 80, 10, 830, 170, 2800, 1550, 9999, 410, 70, 30, 60, 30, 1950, 4410, 10, 70, 2310, 360, 7200, 380, 350, 150, 300, 230, 880, 4340, 250, 7840, 350, 190, 120, 460, 250, 270, 170, 250, 380, 20, 40, 230, 400, 160, 70, 10, 10, 670, 60, 110, 20, 340, 30, 310, 50, 180, 20, 120)
+
+data5 <- data.frame(mz5, intensity5)
+
+ggplot(data5, aes(x=mz5, y=intensity5)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum5",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5)) 
+```
+
+工业应用：香料和香精，食品添加剂
+
+生物学意义： 具有抗菌特性；在植物中作为防御化合物，抵御病原体和昆虫
+
+参考网址：
+
+<https://pubchem.ncbi.nlm.nih.gov/>
+
+<https://webbook.nist.gov/chemistry/name-ser/>
+
+<https://foodb.ca/compounds/>

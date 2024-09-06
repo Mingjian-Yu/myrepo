@@ -1,0 +1,149 @@
+---
+title: "3-Octanone"
+format: html
+editor: visual
+execute: 
+  echo: false
+---
+
+## 基本信息
+
+英文名：3-Octanonel
+
+中文名：3-辛酮
+
+CAS#：106-68-3
+
+化合物分类：酮类（Ketones）
+
+环数：0
+
+芳香环数：0
+
+氢键供体：1
+
+氢键受体：1
+
+脂水分配系数：2.68
+
+IUPAC name：Octan-3-one
+
+InChl：1S/C8H16O/c1-3-5-7-8(9)6-4-2/h3-7H2,1-2H3
+
+InChlKey：QFNHYGZWMYWRHZ-UHFFFAOYSA-N
+
+Canonical SMILES：CCCCCC(=O)C
+
+Isomeric SMILES：CCCCCC(=O)C
+
+RT：9.576
+
+化学式：C8H17O
+
+分子量：128.21
+
+沸点：167.00
+
+Pressure：760.00 mm Hg
+
+蒸汽压 (mmHg)：2
+
+温度 (℃)：20
+
+RI (Searched)：985
+
+结构式：
+
+是否是天然：是
+
+化合物类别：酮
+
+质谱：
+
+```{r}
+# 安装并加载所需的包
+library(ggplot2)
+
+# 图1
+mz1 <- c(26, 27, 28, 29, 30, 31, 37, 38, 39, 40, 41, 42, 43, 44, 45, 48, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 62, 63, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 91, 95, 97, 98, 99, 100, 101, 105, 109, 110, 113, 115, 128, 129, 130)
+intensity1 <- c(180, 1830, 360, 4310, 110, 50, 10, 60, 1050, 170, 1740, 850, 9999, 420, 60, 5, 50, 80, 40, 210, 70, 1190, 400, 9030, 350, 40, 5, 20, 20, 10, 50, 40, 100, 110, 5730, 7170, 820, 40, 5, 5, 20, 10, 160, 20, 60, 10, 1070, 420, 20, 5, 10, 20, 40, 7180, 550, 20, 5, 5, 5, 5, 5, 1870, 200, 10)
+
+data1 <- data.frame(mz1, intensity1)
+
+
+ggplot(data1, aes(x=mz1, y=intensity1)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum1",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图2
+mz2 <- c(27, 28, 29, 30, 31, 39, 41, 42, 43, 44, 45, 55, 56, 57, 58, 59, 69, 70, 71, 72, 73, 84, 85, 86, 87, 99, 100, 101, 113, 114, 128)
+intensity2 <- c(6380, 1660, 9360, 200, 160, 2130, 2900, 1650, 9999, 330, 170, 1570, 430, 8350, 320, 160, 190, 110, 4070, 4550, 640, 50, 710, 140, 120, 3520, 290, 140, 10, 20, 880)
+
+data2 <- data.frame(mz2, intensity2)
+
+ggplot(data2, aes(x=mz2, y=intensity2)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum2",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图3
+mz3 <- c(14, 15, 16, 17, 18, 26, 27, 29, 30, 31, 32, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 83, 84, 85, 86, 97, 98, 99, 100, 101, 102, 113, 128, 129, 130)
+intensity3 <- c(40, 150, 20, 50, 180, 370, 2860, 7230, 170, 120, 30, 60, 30, 100, 1310, 220, 2770, 920, 9999, 340, 150, 50, 160, 40, 250, 110, 920, 540, 8800, 350, 250, 10, 10, 20, 10, 40, 20, 170, 100, 5120, 4710, 1180, 50, 10, 140, 20, 80, 40, 10, 20, 3040, 230, 80, 10, 30, 780, 70, 10)
+
+data3 <- data.frame(mz3, intensity3)
+
+ggplot(data3, aes(x=mz3, y=intensity3)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum3",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5)) 
+
+# 图4
+mz4 <- c(15, 26, 27, 28, 29, 30, 39, 40, 41, 42, 43, 44, 51, 53, 55, 56, 57, 58, 71, 72, 73, 81, 85, 86, 99, 100, 128, 129)
+intensity4 <- c(170, 230, 2910, 810, 7080, 180, 1130, 180, 2210, 560, 9999, 360, 100, 220, 990, 300, 8870, 490, 4810, 6970, 770, 130, 960, 250, 5470, 400, 1780, 170)
+
+data4 <- data.frame(mz4, intensity4)
+
+ggplot(data4, aes(x=mz4, y=intensity4)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum4",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+
+# 图5
+mz5 <- c(26, 27, 28, 29, 30, 39, 41, 42, 43, 44, 45, 51, 55, 56, 57, 58, 69, 70, 71, 72, 73, 77, 81, 99, 100, 128, 129)
+intensity5 <- c(990, 280, 70, 5920, 70, 70, 2060, 480, 9999, 390, 190, 480, 790, 590, 7830, 480, 70, 70, 6750, 5790, 1880, 90, 70, 3790, 280, 1190, 70)
+
+data5 <- data.frame(mz5, intensity5)
+
+ggplot(data5, aes(x=mz5, y=intensity5)) +
+  geom_bar(stat="identity", fill="orange", width=0.8) + 
+  theme_minimal() + 
+  labs(title="Mass Spectrum5",
+       x="m/z",
+       y="Relative Intensity") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), plot.title = element_text(hjust = 0.5))  
+```
+
+工业应用：香料和香精工业，用于制备香料；也用于有机合成
+
+生物学意义：具有抗菌和抗真菌作用
+
+参考网址：
+
+<https://pubchem.ncbi.nlm.nih.gov/>
+
+<https://webbook.nist.gov/chemistry/name-ser/>
+
+<https://foodb.ca/compounds/>
